@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*Estilos Tipografía*/
+#content {
+    font-family: 'Noto Serif', serif;
+}
+/*Encabezado*/
+#content header {
+    background: #d31c32 url("../img/fondo-encabezado.jpg") repeat center top;
+    padding-top: 20px;
+    border-bottom: 2px solid #fed768;
+    box-shadow: 0 0 20px  rgba(0,0,0,.5);
+}
+#content header img {
+    width: 190px;
+}
+#content header h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 108px;
+    color: #fed768;
+    text-shadow: 0 0 15px rgba(0,0,0,.4);
+}
