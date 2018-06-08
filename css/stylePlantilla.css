@@ -1020,7 +1020,7 @@ header li a.especial-site-menu-item {
 }
 /*---------------------------------------- Footer --------------------------------*/
 
-footer{
+body > footer{
   display: block;
   position: relative;
   width: 100%;

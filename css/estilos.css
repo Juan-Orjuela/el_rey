@@ -1,21 +1,448 @@
-@charset "UTF-8";
-/*Estilos Tipografía*/
-#content {
+@charset "UTF-8"; /*Estilos Generales*/
+html #content {
     font-family: 'Noto Serif', serif;
+    padding-top: 45px;
 }
+
+.txt-rojo {
+    color: #e30b44;
+}
+
+.txt-cafe {
+    color: #6c2727;
+}
+#content img {
+    max-width: 100%;
+}
+.btn-vermas {
+    background: url("../img/btn-vermas.png");
+    width: 330px;
+    height: 220px;
+    display: inline-block;
+    font-size: 29px;
+    color: #ffd860;
+    padding-top: 16px;
+    transition: transform 200ms ease;
+    margin: 70px 0 0;
+}
+.btn-vermas:hover {
+    text-decoration: none;
+    color: #ffd860;
+    transform: translateY(10px)
+}
+/*Animaciones*/
+
 /*Encabezado*/
 #content header {
     background: #d31c32 url("../img/fondo-encabezado.jpg") repeat center top;
     padding-top: 20px;
-    border-bottom: 2px solid #fed768;
-    box-shadow: 0 0 20px  rgba(0,0,0,.5);
+    border-bottom: 3px solid #ffd860;
+    position: relative;
+    box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
+    z-index: 2;
 }
+
 #content header img {
     width: 190px;
+    position: relative;
+    z-index: 2;
 }
+
 #content header h2 {
     font-family: 'Pacifico', cursive;
     font-size: 108px;
-    color: #fed768;
+    color: #ffd860;
     text-shadow: 0 0 15px rgba(0,0,0,.4);
+    position: relative;
+    z-index: 2;
 }
+
+#content header::before, #content header::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #808080b0;
+    top: 0;
+    display: block;
+}
+
+#content header:before {
+    right: 50%;
+    background: url("../img/fondo-av.png") no-repeat right 80px bottom;
+}
+
+#content header:after {
+    left: 50%;
+    background: url("../img/fondo-av-2.png") no-repeat left bottom;
+}
+
+/*Video*/
+#content aside {
+    position: relative;
+}
+
+#content aside .video-rey {
+    position: relative;
+    z-index: 2;
+    line-height: 0;
+}
+#content aside .video-rey:before, #content aside .video-rey:after {
+    content:"";
+    display :block;
+    position: absolute;
+    height: 100%;
+    width: 38px;
+    top: 0;
+}
+#content aside .video-rey:before {
+    left: -50px;
+}
+#content aside .video-rey:after {
+    right: -50px;
+}
+#content aside::before, #content aside::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    width: calc(50% - 400px);
+    top: 0;
+    display: block;
+}
+
+#content aside:before {
+    left: 0;
+    background: url("../img/fondo-mesa.jpg") no-repeat left bottom;
+}
+
+#content aside:after {
+    right: 0;
+    background: url("../img/fondo-mesa.jpg") no-repeat right bottom;
+}
+
+/*Contenido general*/
+#content main {
+    background-image: url("../img/fondo-main.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-color: #ffd860;
+    box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
+    padding-top: 130px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 4;
+}
+#content.home main {
+    background-image: url("../img/aviones-fondo-home.png"), 
+    url("../img/aviones-fondo-home2.png"),
+    url("../img/aviones-fondo-home3.png"),
+    url("../img/aviones-fondo-home4.png"),
+    url("../img/fondo-main.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    background-position: -5% 10%, 115% 45%, 8% 90%, 95%  108%, center;
+    background-color: #ffd860;
+}
+.sumario {
+    margin: 30px 0;
+}
+
+.sumario p {
+    font-size: 31px;
+    margin-bottom: 1em;
+}
+
+.box {
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 25px;
+    box-shadow: 0 6px 25px 2px rgba(117, 99, 36, 0.5);
+    transition: transform 500ms ease;
+    position: relative;
+    margin-top: 140px;
+}
+.box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 134px;
+    height: 72px;
+    left: 50%;
+    margin-left: -67px;
+    top: -71px;
+}
+.box .img {
+    margin-bottom: -32px;
+    position: relative;
+    transition: transform 300ms ease 100ms;
+}
+
+.box .img::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../img/platos-hover.png") no-repeat center top;
+    display: none;
+}
+
+.box h3 {
+    color: #ffd860;
+    font-weight: bold;
+    font-size: 44px;
+    transition: transform 300ms ease 200ms;
+    position: relative;
+    z-index: 4;
+}
+
+.box p {
+    color: #ffffff;
+    padding: 0.7em;
+    transition: transform 300ms ease 200ms;
+}
+
+.box a {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #ffd860;
+    border-radius: 12px;
+    padding: 1px 18px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0 , 0 ,.5);
+    transition: transform 300ms ease 200ms;
+}
+
+/*Hovers*/
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box:hover .img:before {
+    display: block;
+}
+
+.box:hover .img,
+.box:hover h3,
+.box:hover p,
+.box:hover a {
+    transform: translateY(-10px);
+}
+/*Customs*/
+.box-mx:before {
+    background-image: url('../img/bandera-mexico.png')
+}
+.box-mx {
+    background-color: #df4954;
+    background-image: url("../img/textura-papel-mx.png");
+}
+
+.box-mx a {
+    color: #df4954;
+}
+
+.box-id:before {
+    background-image: url('../img/bandera-india.png')
+}
+.box-id {
+    background-color: #fc783d;
+    background-image: url("../img/textura-papel-id.png");
+}
+.box-id a {
+    color: #fc783d;
+}
+
+.box-om:before {
+    background-image: url('../img/bandera-oriente.png')
+}
+.box-om {
+    background-color: #96c352;
+    background-image: url("../img/textura-papel-om.png");
+}
+.box-om .img {
+    margin-top: -6px;
+    margin-bottom: -38px;
+}
+.box-om h3 {
+    font-size: 32px;
+    line-height: 1;
+    padding: 0 29px;
+}
+.box-om a {
+    color: #96c352;
+}
+
+.box-it:before {
+    background-image: url('../img/bandera-italia.png')
+}
+.box-it {
+    background-color: #28af65;
+    background-image: url("../img/textura-papel-it.png");
+}
+.box-it a {
+    color: #28af65;
+}
+
+.box-pr:before {
+    background-image: url('../img/bandera-peru.png')
+}
+.box-pr {
+    background-color: #f55052;
+    background-image: url("../img/textura-papel-pr.png");
+}
+.box-pr a {
+    color: #f55052;
+}
+
+.box-ig:before {
+    background-image: url('../img/bandera-ing.png')
+}
+.box-ig {
+    background-color: #f55052;
+    background-image: url("../img/textura-papel-ig.png");
+}
+.box-ig a {
+    background-color: #f55052;
+    color: #ffd860;
+}
+
+.box-gr:before {
+    background-image: url('../img/bandera-grecia.png')
+}
+.box-gr {
+    background-color: #4a91ca;
+    background-image: url("../img/textura-papel-gr.png");
+}
+.box-gr a {
+    color: #4a91ca;
+}
+
+
+.box-ps {
+    background-color: #506aa8;
+    background-image: url("../img/textura-papel-ps.png");
+    z-index: 5;
+}
+.box-ps a {
+    color: #506aa8;
+}
+.pasaporte {
+    position: relative;
+}
+.pasaporte .hoja {
+    background: #fff;
+    border-radius: 16px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    box-shadow: 2px 0px 15px 0px rgba(117, 99, 36, 0.3);
+    transition: transform 500ms ease 100ms;
+}
+.pasaporte .hoja-1 {
+    left: 15px;
+    transition: transform 500ms ease 200ms;
+}
+.pasaporte .hoja-2 {
+    left: 10px;
+    transition: transform 500ms ease 150ms;
+}
+.pasaporte .hoja-3 {
+    left: 5px;
+    transition: transform 500ms ease 50ms;
+}
+.pasaporte .box:hover ~ .hoja {
+    transform: translateY(-10px);
+}
+.box-es:before {
+    background-image: url('../img/bandera-esc.png')
+}
+.box-es {
+    background-color: #f55052;
+    background-image: url("../img/textura-papel-es.png");
+}
+.box-es a {
+    color: #f55052;
+}
+.box-es h3 {
+    font-size: 36px;
+    margin-top: 0.25em;
+}
+
+/*Footer*/
+#content footer {
+    background: #121016;
+    text-align: center;
+    padding: 50px 0;
+}
+/*Enbezados internas*/
+.pais h1 {
+    font-weight: bold;
+    position: relative;
+    text-shadow: -1px -1px 1px rgba(199, 199, 199, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.3), 0 8px 25px rgba(136, 114, 43, 0.46);
+    background-size: contain;
+    background-repeat: no-repeat;
+    letter-spacing: 0.06em;
+}
+.pais h1 span {
+    font-style: italic;
+    font-size: 72px;
+    position: absolute;
+    text-shadow: none;
+    top: 0;
+    letter-spacing: 0em;
+}
+.pais .encabezado .txt-intro {
+    font-size: 46px;
+    line-height: 1.2;
+}
+.pais .encabezado .linea {
+    margin: 5px 0 30px;
+}
+/*Infografias*/
+#content .info p {
+    font-size: 21px;
+}
+#content .abs-txt p {
+    position: absolute;
+}
+p.ingrediente {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    position: absolute;
+}
+/*
+============
+Custom pais
+============
+*/
+
+/*Inglaterra*/
+.pais-ing .video-rey:after,
+.pais-ing .video-rey:before {
+    background: url("../img/ban-lt-ig.png") repeat-y;
+}
+.pais-ing h1 {
+    font-size: 160px;
+    color: #2c5688;
+    background-image: url("../img/tit-fondo-ig.png");
+    background-position: right 1.7% top;
+    padding: .85em 0 .1em;
+}
+.pais-ing h1 span {
+    top: 20%;
+    color: #ff2e2e;
+}
+.pais-ing .encabezado .txt-intro {
+    color: #2c5587;
+}
+.pais-ing .info {
+    margin-top: 20px;
+}
+.pais-ing .el-1 {
+    position: relative;
+}
+
