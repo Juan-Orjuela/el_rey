@@ -35,6 +35,133 @@ html #content {
 }
 
 /*Animaciones*/
+@keyframes hojas {
+    from {
+        transform: rotate(-7deg);
+    }
+    to {
+        transform: rotate(7deg);
+    }
+}
+/*Hojas*/
+#content aside. #content main {
+    position:relative;
+}
+.hoja {
+    position: absolute;
+    z-index: 5;
+    background-repeat: no-repeat;
+
+}
+.hoja-1 {
+    width: 141px;
+    height: 277px;
+    left: -5px;
+    
+}
+.hoja-1a {
+    width: 118px;
+    height: 190px;
+    background-image: url("../img/hoja-1a.png");
+    left: -6px;
+    top: 25px;
+    animation: hojas 2000ms ease-in-out infinite alternate;
+    transform-origin: 0 50%;
+
+    
+}
+.hoja-1b {
+    width: 97px;
+    height: 166px;
+    background-image: url("../img/hoja-1b.png");
+    left: 0;
+    bottom:0;
+    animation: hojas 2800ms ease-in-out infinite alternate;
+    transform-origin: 0 50%;
+    
+}
+.hoja-2 {
+    width: 164px;
+    height: 250px;
+    left: -15px;
+
+}
+.hoja-2a {
+    width: 118px;
+    height: 190px;
+    background-image: url("../img/hoja-1a.png");
+    left: -6px;
+    top: 25px;
+    animation: hojas 3500ms ease-in-out infinite alternate;
+    transform-origin: 0 50%;
+}
+.hoja-2b {
+    width: 150px;
+    height: 166px;
+    background-image: url("../img/hoja-2b.png");
+    left: 0;
+    bottom:0;
+    animation: hojas 2900ms ease-in-out infinite alternate;
+    transform-origin: 0 50%;
+    
+}
+.hoja-3 {
+    width: 129px;
+    height: 186px;
+    background-image: url("../img/hoja-3.png");
+    left: -15px;
+    animation: hojas 2200ms ease-in-out infinite alternate;
+    transform-origin: 0 50%;
+}
+.hoja-4 {
+    width: 153px;
+    height: 236px;
+    right: 0;
+    overflow: hidden;
+}
+.hoja-4a {
+    width: 150px;
+    height: 166px;
+    background-image: url("../img/hoja-4a.png");
+    right: -6px;
+    top:0;
+    animation: hojas 2900ms ease-in-out infinite alternate;
+    transform-origin: 80% 50%;
+}
+.hoja-4b {
+    width: 97px;
+    height: 166px;
+    background-image: url("../img/hoja-4b.png");
+    right: -2px;
+    bottom:0;
+    animation: hojas 2800ms ease-in-out infinite alternate;
+    transform-origin: 100% 50%;
+    
+}
+.hoja-5 {
+    width: 148px;
+    height: 196px;
+    right: 0;
+    overflow: hidden;
+    
+    
+}
+.hoja-5a {
+    width: 148px;
+    height: 196px;
+    right: -8px;
+    overflow: hidden;
+    background-image: url("../img/hoja-5.png");
+    animation: hojas 2100ms ease-in-out infinite alternate;
+    transform-origin: 100% 50%;
+    
+}
+/*.hoja-6 {
+    width: 146px;
+    height: 268px;
+    right: -15px;
+    background-image: url("../img/hoja-6.png");
+}*/
 /*Encabezado*/
 #content header {
     background: #d31c32 url("../img/fondo-encabezado.jpg") repeat center top;
@@ -127,7 +254,14 @@ html #content {
     right: 0;
     background: url("../img/fondo-mesa.jpg") no-repeat right bottom;
 }
-
+#content aside .hoja-1,
+#content aside .hoja-4 {
+    top: 0;
+}
+#content aside .hoja-2,
+#content aside .hoja-5 {
+    bottom: -25%;
+}
 /*Contenido general*/
 #content main {
     background-image: url("../img/fondo-main.jpg");
@@ -139,8 +273,21 @@ html #content {
     padding-bottom: 0;
     position: relative;
     z-index: 4;
-}
 
+}
+#content main .hoja-1 {
+    bottom:-4%;
+}
+#content main .hoja-3 {
+    top: 50%;
+    animation: hojas 4200ms ease-in-out infinite alternate;
+}
+#content main .hoja-5 {
+    top: 55%;
+}
+#content main .hoja-4 {
+    bottom:-4%;
+}
 #content.inicio main {
     background-image: url("../img/aviones-fondo-home.png"), url("../img/aviones-fondo-home2.png"), url("../img/aviones-fondo-home3.png"), url("../img/aviones-fondo-home4.png"), url("../img/fondo-main.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
@@ -352,7 +499,7 @@ html #content {
     position: relative;
 }
 
-.pasaporte .hoja {
+.pasaporte .phoja {
     background: #fff;
     border-radius: 16px;
     position: absolute;
@@ -363,22 +510,22 @@ html #content {
     transition: transform 500ms ease 100ms;
 }
 
-.pasaporte .hoja-1 {
+.pasaporte .phoja-1 {
     left: 15px;
     transition: transform 500ms ease 200ms;
 }
 
-.pasaporte .hoja-2 {
+.pasaporte .phoja-2 {
     left: 10px;
     transition: transform 500ms ease 150ms;
 }
 
-.pasaporte .hoja-3 {
+.pasaporte .phoja-3 {
     left: 5px;
     transition: transform 500ms ease 50ms;
 }
 
-.pasaporte .box:hover ~ .hoja {
+.pasaporte .box:hover ~ .phoja {
     transform: translateY(-10px);
 }
 
