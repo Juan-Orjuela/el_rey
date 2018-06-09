@@ -614,6 +614,8 @@ Custom pais
 ============
 */
 /*Inglaterra*/
+
+/*Encabezado*/
 .pais-ing .video-rey:after, .pais-ing .video-rey:before {
     background: url("../img/ban-lt-ig.png") repeat-y;
 }
@@ -622,7 +624,7 @@ Custom pais
     font-size: 160px;
     color: #2c5688;
     background-image: url("../img/tit-fondo-ig.png");
-    background-position: right 1.7% top;
+    background-position: right 5.7% top;
     padding: .85em 0 .1em;
 }
 
@@ -634,7 +636,7 @@ Custom pais
 .pais-ing .encabezado .txt-intro {
     color: #2c5587;
 }
-
+/*Información*/
 .pais-ing .info {
     margin-top: 20px;
 }
@@ -744,3 +746,30 @@ Custom pais
     margin-top: -2%;
     margin-bottom: 120px;
 }
+/*
+============
+RESPONSIVE
+============
+*/
+/*1200px hacia abajo*/
+@media screen and (max-width: 1201px) {
+   h1 {
+       color: #fff!important;
+   }
+}
+/*Fin 1200px*/
+/*992px hacia abajo*/
+@media screen and (max-width: 993px) {
+   
+}
+/*Fin 992px*/
+/*768px hacia abajo*/
+@media screen and (max-width: 769px) {
+   
+}
+/*Fin 768px*/
+/*576px hacia abajo*/
+@media screen and (max-width: 577px) {
+   
+}
+/*Fin 576px*/
