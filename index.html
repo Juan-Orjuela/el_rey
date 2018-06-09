@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Pacifico&amp;subset=latin-ext" rel="stylesheet">
 
+    <!-- Animacion -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
     <title>El Rey | Del mundo a la mesa</title>
 
     <!--Favicon-->
@@ -383,22 +386,22 @@
                             <div class="row">
 
                                 <div class="col text-center">
-                                    <img src="img/icon-home-1.png" alt="Plato">
+                                    <img data-aos="fade-up" src="img/icon-home-1.png" alt="Plato">
                                     <div class="sumario">
-                                        <p class="txt-rojo">La gastronomía es una expresión cultural, por eso en la mayoría de países hay un
+                                        <p data-aos="fade-up" data-aos-delay="200" class="txt-rojo">La gastronomía es una expresión cultural, por eso en la mayoría de países hay un
                                             plato típico, y cada uno de estos tiene un ingrediente clave, sin el cual la
                                             comida no sabría igual.</p>
-                                        <p class="txt-cafe">Aquí le contamos cuáles son esos ingredientes y cómo darle un toque internacional
+                                        <p data-aos="fade-up" data-aos-delay="400" class="txt-cafe">Aquí le contamos cuáles son esos ingredientes y cómo darle un toque internacional
                                             a su comida.</p>
                                     </div>
-                                    <img src="img/icon-home-2.png" alt="Plato">
+                                    <img data-aos="fade-up" data-aos-delay="600" src="img/icon-home-2.png" alt="Plato">
                                 </div>
                             </div>
                             <!-- Paises -->
                             <div class="row">
                                 <div class="col">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" class="col-md-4">
                                             <div class="box box-mx">
                                                 <div class="img">
                                                     <img src="img/plato-mexico.png" alt="Plato México">
@@ -408,7 +411,7 @@
                                                 <a href="mexico.html" class="btn">Conócelo</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" data-aos-delay="300" class="col-md-4">
                                             <div class="box box-id">
                                                 <div class="img">
                                                     <img src="img/plato-id.png" alt="Plato India">
@@ -418,7 +421,7 @@
                                                 <a href="india.html" class="btn">Conócela</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" data-aos-delay="600" class="col-md-4">
                                             <div class="box box-om">
                                                 <div class="img">
                                                     <img src="img/plato-om.png" alt="Plato Oriente Medio">
@@ -431,7 +434,7 @@
                                     </div>
                                     <div class="row">
 
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" class="col-md-4">
                                             <div class="box box-it">
                                                 <div class="img">
                                                     <img src="img/plato-it.png" alt="Plato Italia">
@@ -441,7 +444,7 @@
                                                 <a href="italia.html" class="btn">Conócelo</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" data-aos-delay="300" class="col-md-4">
                                             <div class="box box-pr">
                                                 <div class="img">
                                                     <img src="img/plato-pr.png" alt="Plato Perú">
@@ -451,7 +454,7 @@
                                                 <a href="peru.html" class="btn">Conócela</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" data-aos-delay="600" class="col-md-4">
                                             <div class="box box-ig">
                                                 <div class="img">
                                                     <img src="img/plato-ig.png" alt="Plato Inglaterra">
@@ -465,7 +468,7 @@
                                     </div>
                                     <div class="row">
 
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" class="col-md-4">
                                             <div class="box box-gr">
                                                 <div class="img">
                                                     <img src="img/plato-gr.png" alt="Plato Grecia">
@@ -475,7 +478,7 @@
                                                 <a href="grecia.html" class="btn">Conócelo</a>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" data-aos-delay="300" class="col-md-4">
                                             <div class="pasaporte">
                                                 <div class="box box-ps">
                                                     <div class="img">
@@ -490,7 +493,7 @@
                                                 <div class="phoja phoja-3"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div data-aos="fade-up" data-aos-delay="600" class="col-md-4">
                                             <div class="box box-es">
                                                 <div class="img">
                                                     <img src="img/plato-es.png" alt="Plato Escandinavia">
@@ -1693,6 +1696,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <!-- Animacion -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600
+        });
+    </script>
 </body>
 
 </html>
