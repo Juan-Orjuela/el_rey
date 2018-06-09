@@ -273,6 +273,7 @@ html #content {
     padding-bottom: 0;
     position: relative;
     z-index: 4;
+    overflow: hidden;
 }
 
 #content main .hoja-1 {
@@ -691,18 +692,6 @@ Custom pais
     text-align: center;
 }
 
-.pais-ing .el-1 .img-txt:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 70%;
-    height: 50%;
-    background: url("../img/graf-ig-1.png") no-repeat;
-    background-size: contain;
-    left: 90%;
-    top: 32%;
-}
-
 .pais-ing .el-2 {
     max-width: 375px;
     float: right;
@@ -715,6 +704,18 @@ Custom pais
 .pais-ing .el-2 p {
     padding: 0 35px;
     margin-top: -20px;
+}
+
+.pais-ing .el-1 .img-txt:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    background: url("../img/graf-ig-1.png") no-repeat;
+    background-size: contain;
+    left: 90%;
+    top: 32%;
 }
 
 .pais-ing .el-2:after {
@@ -896,6 +897,19 @@ RESPONSIVE
     #content.inicio aside .video-rey:after {
         right: 0;
     }
+
+    #content aside .video-rey:before {
+        left: -15px;
+    }
+
+    #content aside .video-rey:before, #content aside .video-rey:after {
+        width: 15px;
+        background-size: contain
+    }
+
+    #content aside .video-rey:after {
+        right: -15px;
+    }
 }
 
 /*Fin 1100px*/
@@ -934,6 +948,15 @@ RESPONSIVE
         font-size: 26px;
         padding-top: 16px;
         margin: 70px 0 0;
+    }
+
+    /*Internas puntaje*/
+    .pais h1 span {
+        font-size: 58px;
+    }
+
+    .pais .encabezado .txt-intro {
+        font-size: 36px;
     }
 
     /*Home boxes*/
@@ -981,6 +1004,55 @@ RESPONSIVE
         background-position: -5% 10%, 115% 45%, 95% 108%, center;
         background-color: #ffd860;
     }
+
+    /*Inglaterra*/
+    .pais-ing h1 {
+        font-size: 120px;
+        background-position: right 3.7% top;
+        padding: .85em 0 .1em;
+    }
+
+    .pais-ing .el-1 .img-txt:after {
+        width: 70%;
+        height: 50%;
+        left: 55%;
+        top: 40%;
+        z-index: -1;
+    }
+
+    .pais-ing .el-2:after {
+        width: 65%;
+        height: 50%;
+        right: 62%;
+        top: 94%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(2) {
+        top: 31%;
+        right: 10%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(3) {
+        top: 49%;
+        right: 33.5%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(4) {
+        top: 68%;
+        right: 58.5%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(5) {
+        top: 85%;
+        right: 79%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:last-child {
+        color: #f63533;
+        right: -0.5%;
+        bottom: 3%;
+        max-width: 220px;
+    }
 }
 
 /*Fin 992px*/
@@ -1017,6 +1089,74 @@ RESPONSIVE
     .box-ps:before {
         display: none;
     }
+
+    /*Internas textos*/
+    .pais h1 {
+        text-shadow: -1px -1px 1px rgba(199, 199, 199, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.3), 0 4px 15px rgba(136, 114, 43, 0.46);
+    }
+
+    .pais h1 span {
+        font-size: 42px;
+    }
+
+    .pais .encabezado .txt-intro {
+        font-size: 30px;
+    }
+
+    #content .info p {
+        font-size: 19px;
+    }
+
+    #content .ingrediente {
+        font-size: 24px;
+    }
+
+    .pais .flecha img {
+        width: 50px;
+    }
+
+    /*Inglaterra*/
+    .pais-ing h1 {
+        font-size: 89px;
+        background-position: right 3.7% top;
+        padding: .85em 0 .1em;
+    }
+
+    .pais-ing .el-4 img {
+        width: 160px;
+        margin-left: 9%;
+    }
+
+    .pais-ing .r-3 {
+        margin-top: -27%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(2) {
+        top: 31%;
+        right: 9%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(3) {
+        top: 49%;
+        right: 32.5%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(4) {
+        top: 68%;
+        right: 57.5%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(5) {
+        top: 85%;
+        right: 77%;
+    }
+
+    .pais-ing .r-3 .abs-txt p:last-child {
+        color: #f63533;
+        right: -0.5%;
+        bottom: -3%;
+        max-width: 160px;
+    }
 }
 
 /*Fin 768px*/
@@ -1030,16 +1170,86 @@ RESPONSIVE
         font-size: 65px;
         margin-top: 0.2em;
     }
+
     .sumario p {
         font-size: 24px;
     }
+
     #content aside::before, #content aside::after {
         width: 50%;
     }
+
     .btn-vermas {
-    width: 280px;
-    font-size: 24px;
-}
+        width: 280px;
+        font-size: 24px;
+    }
+
+    .pais h1 span {
+        font-size: 36px;
+    }
+
+    .pais .encabezado .txt-intro {
+        font-size: 22px;
+    }
+
+    #content .info p {
+        font-size: 16px;
+    }
+
+    #content main {
+        padding-top: 70px;
+    }
+
+    /*Inglaterra*/
+    .pais-ing h1 {
+        font-size: 74px;
+        background-position: right 3.7% top;
+        padding: .85em 0 .1em;
+        text-align: center;
+    }
+
+    .pais-ing .r-3 {
+        margin-top: -7%;
+        padding-bottom: 50px;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(2) {
+        top: 14%;
+        left: 70%;
+        right: initial;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(3) {
+        top: 30%;
+        left: 70%;
+        right: initial;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(4) {
+        top: 45.3%;
+        left: 70%;
+        right: initial;
+    }
+
+    .pais-ing .r-3 .abs-txt p:nth-child(5) {
+        top: 61%;
+        left: 70%;
+        right: initial;
+    }
+
+    .pais-ing .r-3 .abs-txt p:last-child {
+        color: #f63533;
+        right: initial;
+        left: 50%;
+        margin-left: -110px;
+        bottom: -3%;
+        max-width: 220px;
+    }
+
+    .pais-ing .r-4 {
+        margin-top: -2%;
+        margin-bottom: 60px;
+    }
 }
 
 /*Fin 576px*/
@@ -1052,11 +1262,82 @@ RESPONSIVE
     #content header h2 {
         font-size: 45px;
     }
+
     .sumario p {
         font-size: 18px;
     }
+
     .box-es h3 {
         font-size: 32px;
+    }
+
+    .pais h1 span {
+        font-size: 26px;
+    }
+
+    .pais .encabezado .txt-intro {
+        font-size: 19px;
+    }
+
+    .pais .flecha img {
+        width: 40px;
+    }
+
+    /*Inglaterra*/
+    .pais-ing h1 span {
+        top: 19%;
+        text-shadow: 0 1px 9px rgba(255, 230, 147, 0.86)
+    }
+
+    .pais-ing h1 {
+        font-size: 46px;
+        background-position: right 3.7% top;
+        padding: 1.2em 0 .1em;
+        text-align: center;
+    }
+
+    .pais-ing .r-1 > .col-6, .pais-ing .r-2 > .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .pais-ing .r-1 .el-1 img:last-child {
+        width: 140px;
+        margin: 10% 0 0 40%;
+    }
+
+    .pais-ing .el-1 .img-txt:after {
+        width: 70%;
+        height: 50%;
+        left: 0%;
+        top: 100%;
+        transform: rotate(90deg)
+    }
+
+    .pais-ing .r-2 .el-3 {
+        max-width: 200px;
+    }
+
+    .pais-ing .el-2:after {
+        width: 65%;
+        height: 50%;
+        right: -22%;
+        top: 114%;
+        transform: rotate(-70deg)
+    }
+    .pais-ing .r-2 .el-4 {
+        text-align: right;
+        margin-top: -6%;
+    }
+    .pais-ing .r-3 {
+        margin-top: 0;
+        padding-bottom: 60px;
+    }
+    .pais-ing .r-3 .abs-txt p:last-child {
+        
+        bottom: -6%;
+        
     }
 }
 
