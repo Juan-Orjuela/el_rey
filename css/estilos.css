@@ -653,6 +653,11 @@ html #content {
     text-shadow: 0 0 15px rgba(0, 0, 0, .7);
 }
 
+.pasaporte .avion {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
 /*
 ============
 Mapa
@@ -678,68 +683,369 @@ Mapa
 }
 
 #mapa .continentes {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
 }
 
 #mapa .globo {
-    
     top: 20%;
     left: 5%;
 }
 
-#mapa .cont-pines a {
+#mapa .cont-pines .pin {
     position: absolute;
 }
 
-#mapa .cont-pines a:nth-child(1) {
+#mapa .cont-pines .pin img {
+    transition: margin 200ms ease;
+}
+
+#mapa .cont-pines .pin:hover img {
+    margin-top: -15%;
+}
+
+#mapa .cont-pines > a:nth-child(1) {
     top: 36%;
     left: 15%;
 }
-#mapa .cont-pines a:nth-child(2) {
+
+#mapa .cont-pines > a:nth-child(2) {
     top: 49%;
     left: 18%;
 }
-#mapa .cont-pines a:nth-child(3) {
+
+#mapa .cont-pines > a:nth-child(3) {
     top: 16%;
     left: 46%;
 }
-#mapa .cont-pines a:nth-child(4) {
+
+#mapa .cont-pines > a:nth-child(4) {
     top: 20%;
     left: 41%;
 }
-#mapa .cont-pines a:nth-child(5) {
+
+#mapa .cont-pines > a:nth-child(5) {
     top: 26%;
     left: 45%;
 }
-#mapa .cont-pines a:nth-child(6) {
+
+#mapa .cont-pines > a:nth-child(6) {
     top: 28%;
     left: 49.5%;
 }
-#mapa .cont-pines a:nth-child(7) {
+
+#mapa .cont-pines > a:nth-child(7) {
     top: 35%;
     left: 56%;
 }
-#mapa .cont-pines a:nth-child(8) {
+
+#mapa .cont-pines > a:nth-child(8) {
     top: 38%;
     left: 66.5%;
 }
+
+#mapa .nube {
+    animation: nubes linear infinite alternate;
+}
+
 #mapa .nube:nth-child(4) {
     top: 8%;
     left: 15%;
+    animation-duration: 5000ms;
 }
+
 #mapa .nube:nth-child(5) {
     top: 63%;
     left: 5%;
+    animation-delay: 1500ms;
+    animation-duration: 6000ms;
 }
+
 #mapa .nube:nth-child(6) {
     top: 19%;
     left: 75%;
+    animation-delay: 500ms;
+    animation-duration: 8000ms;
 }
+
 #mapa .barco {
     top: 67%;
     left: 55%;
 }
+
+/*Animaciones mapa*/
+.fondo-mapa {
+    transform: scaleX(0.1)!important;
+    transition: transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89)!important;
+}
+
+.fondo-mapa.aos-animate {
+    transform: scaleX(1)!important;
+}
+
+/*Popovers*/
+.popover {
+    font-family: 'Noto Serif', serif;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 8px 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,.4);
+}
+
+.popover-header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    color: inherit;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+#mapa .popover a {
+    background: gray;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    left: 0;
+    transition: left 400ms cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+#mapa .popover a:hover {
+    text-decoration: none;
+    left: 4%;
+}
+
+#mapa .popover h3 {
+    color: #f3c74d;
+    font-size: 40px;
+}
+
+#mapa .popover p {
+    color: #fff;
+}
+
+#mapa .popover a::before {
+    content: "";
+    display: block;
+    background: url('../img/popover-plane.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -40px;
+    top: -1px;
+}
+
+/*Popovers por pais*/
+/*México*/
+#mapa .pin-mex[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-mex.png') no-repeat , url('../img/pop-t-mex.jpg') repeat;
+    background-position: right 8px top 50%;
+    color: #df4954;
+}
+
+#mapa .pin-mex[aria-describedby^="popover"] ~ .popover a {
+    background: #f3c74d;
+    color: #df4954;
+}
+
+#mapa .pin-mex[aria-describedby^="popover"] ~ .popover p {
+    padding-right: 60px;
+}
+
+#mapa .pin-mex[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #026e4e;
+}
+
+/*Peru*/
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-per.png') no-repeat , url('../img/pop-t-per.jpg') repeat;
+    background-position: right 8px top 9%;
+    background-size: 80px, auto;
+    color: #df4954;
+}
+
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover a {
+    background: #f3c74d;
+    color: #df4954;
+}
+
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover p {
+}
+
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #fda624;
+}
+
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover a {
+    color: #fff;
+    background-color: #d53544;
+}
+
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover a::before {
+    background: url('../img/popover-plane2.png') no-repeat center;
+    background-size: contain;
+}
+
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover h3 {
+    color: #d53544;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+/*Escandinavia*/
+#mapa .pin-esc[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-esc.png') no-repeat , url('../img/pop-t-esc.jpg') repeat;
+    background-position: right 8px top 52%;
+    background-size: 80px, auto;
+    color: #df4954;
+}
+
+#mapa .pin-esc[aria-describedby^="popover"] ~ .popover p {
+    padding-right: 30px;
+}
+
+#mapa .pin-esc[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #d84150;
+}
+
+#mapa .pin-esc[aria-describedby^="popover"] ~ .popover a {
+    color: #f3c74d;
+    background-color: #00b2ff;
+}
+
+#mapa .pin-esc[aria-describedby^="popover"] ~ .popover h3 {
+    font-size: 24px;
+}
+
+/*Inglaterra*/
+#mapa .pin-ing[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-ing.png') no-repeat , url('../img/pop-t-ing.jpg') repeat;
+    background-position: right 8px top 52%;
+    background-size: 80px, auto;
+    color: #df4954;
+}
+
+#mapa .pin-ing[aria-describedby^="popover"] ~ .popover a {
+    background: #df4954;
+    color: #f3c74d;
+}
+
+#mapa .pin-ing[aria-describedby^="popover"] ~ .popover p {
+    padding-right: 68px;
+}
+
+#mapa .pin-ing[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #0067a2;
+}
+
+#mapa .pin-ing[aria-describedby^="popover"] ~ .popover h3 {
+    font-size: 30px;
+}
+
+/*Italia*/
+#mapa .pin-ita[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-ita.png') no-repeat , url('../img/pop-t-ita.jpg') repeat;
+    background-position: right 5px top 52%;
+    color: #df4954;
+}
+
+#mapa .pin-ita[aria-describedby^="popover"] ~ .popover a {
+    background: #d43545;
+    color: #f3c74d;
+}
+
+#mapa .pin-ita[aria-describedby^="popover"] ~ .popover p {
+    padding-right: 60px;
+    margin-bottom: 26px;
+}
+
+#mapa .pin-ita[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #2ba45c;
+}
+
+/*Grecia*/
+#mapa .pin-gre[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-gre.png') no-repeat , url('../img/pop-t-gre.jpg') repeat;
+    background-position: right 8px top 52%;
+    color: #df4954;
+}
+
+#mapa .pin-gre[aria-describedby^="popover"] ~ .popover a {
+    background: #f3c74d;
+    color: #3375ac;
+}
+
+#mapa .pin-gre[aria-describedby^="popover"] ~ .popover p {
+    padding-right: 50px;
+}
+
+#mapa .pin-gre[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #3173aa;
+}
+
+/*Oriente*/
+#mapa .pin-ori[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-ori.png') no-repeat , url('../img/pop-t-ori.jpg') repeat;
+    background-position: right 8px top 52%;
+    color: #df4954;
+}
+
+#mapa .pin-ori[aria-describedby^="popover"] ~ .popover a {
+    background: #f3c74d;
+    color: #459a34;
+}
+
+#mapa .pin-ori[aria-describedby^="popover"] ~ .popover p {
+    padding-right: 50px;
+}
+
+#mapa .pin-ori[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #419832;
+}
+
+#mapa .pin-ori[aria-describedby^="popover"] ~ .popover h3 {
+    font-size: 24px;
+}
+
+/*India*/
+#mapa .pin-ind[aria-describedby^="popover"] ~ .popover {
+    background: url('../img/pop-ind.png') no-repeat , url('../img/pop-t-ind.jpg') repeat;
+    background-position: right 8px top 7%;
+    color: #df4954;
+}
+
+#mapa .pin-ind[aria-describedby^="popover"] ~ .popover a {
+    background: #008e3c;
+    color: #f3c74d;
+}
+
+#mapa .pin-ind[aria-describedby^="popover"] ~ .popover p {
+    padding-top: 10px;
+}
+
+#mapa .pin-ind[aria-describedby^="popover"] ~ .popover .arrow:after {
+    border-right-color: #ee6f36;
+}
+
+.popover.fade {
+    transition: opacity .25s linear .1s;
+}
+
+@keyframes nubes {
+    from {
+        margin-left: -6%;
+    }
+
+    to {
+        margin-left: 6%;
+    }
+}
+
 /*
 ============
 Custom pais
@@ -886,6 +1192,15 @@ RESPONSIVE
 */
 /*1200px hacia abajo*/
 @media screen and (max-width: 1199px) {
+    #mapa .cont-pines .pin {
+        position: absolute;
+        text-align: center;
+        width: 39px;
+    }
+    #content.pasaporte-page .avion {
+        max-width: 120px;
+        margin: 50px;
+    }
 }
 
 /*Fin 1200px*/
@@ -1140,6 +1455,21 @@ RESPONSIVE
         bottom: 3%;
         max-width: 220px;
     }
+    /*Mapa*/
+    #mapa .cont-pines .pin {
+        position: absolute;
+        text-align: center;
+        width: 30px;
+    }
+    #mapa .nube {
+        max-width: 150px;
+    }
+    #mapa .globo {
+        width: 70px;
+    }
+    #mapa .barco {
+        max-width: 120px;
+    }
 }
 
 /*Fin 992px*/
@@ -1243,6 +1573,30 @@ RESPONSIVE
         right: -0.5%;
         bottom: -3%;
         max-width: 160px;
+    }
+    /*Mapa*/
+    #mapa-wp {
+        position: relative;
+        overflow: auto;
+        border: 8px solid #ffb929;
+        padding: 15% 5% 5%;
+
+    }
+    #mapa-wp::before {
+        content: "Desliza >>";
+        color: #e40a43;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing:0.2em;
+        position: absolute;
+        top: 3%;
+        width: 100%;
+        text-align: center;
+
+    }
+    #mapa {
+        min-width: 690px;
+        position: relative;
     }
 }
 
