@@ -413,35 +413,35 @@
                                             src="img/continentes.png" alt="continentes">
                                         <div class="cont-pines">
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="900" class="pin pin-mex" title="México" data-toggle="popover"
-                                                data-content="<p>Hay 3 condimentos estrella para hacer una verdadera comida mexicana.</p><a href='mexico.html'>Conócelo</a>">
+                                                data-content="<a href='#' class='cerrarPop'></a><p>Hay 3 condimentos estrella para hacer una verdadera comida mexicana.</p><a class='enlace' href='mexico.html'>Conócelo</a>">
                                                 <img src="img/pin-mex.png" alt="Pin">
                                             </a>
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="1000" class="pin pin-per" title="Perú" data-toggle="popover"
-                                                data-content="<p>Solo necesita una especia para crear una experiencia gastronómica peruana.</p><a href='peru.html'>Conócelo</a>">
+                                                data-content="<a href='#' class='cerrarPop'></a><p>Solo necesita una especia para crear una experiencia gastronómica peruana.</p><a class='enlace' href='peru.html'>Conócelo</a>">
                                                 <img src="img/pin-per.png" alt="Pin">
                                             </a>
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="1100" class="pin pin-esc" title="Encandinavia" data-toggle="popover"
-                                                data-content="<p>Hoy haga un postre escandinavo, el ingrediente principal: la canela.</p><a href='escandinavia.html'>Conócela</a>">
+                                                data-content="<a href='#' class='cerrarPop'></a><p>Hoy haga un postre escandinavo, el ingrediente principal: la canela.</p><a class='enlace' href='escandinavia.html'>Conócela</a>">
                                                 <img src="img/pin-esc.png" alt="Pin">
                                             </a>
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="1200" class="pin pin-ing" title="Inglaterra" data-toggle="popover"
-                                                data-content="<p>Descubra un plato de la India, que pasa por Inglaterra y ahora llega a su mesa.</p><a href='inglaterra.html'>Conócela</a>">
+                                                data-content="<a href='#' class='cerrarPop'></a><p>Descubra un plato de la India, que pasa por Inglaterra y ahora llega a su mesa.</p><a class='enlace' href='inglaterra.html'>Conócela</a>">
                                                 <img src="img/pin-ing.png" alt="Pin">
                                             </a>
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="1300" class="pin pin-ita" title="Italia" data-toggle="popover"
-                                                data-content="<p>Para una comida Italiana, hay 3 condimentos infaltables.</p><a href='italia.html'>Conócela</a>">
+                                                data-content="<a href='#' class='cerrarPop'></a><p>Para una comida Italiana, hay 3 condimentos infaltables.</p><a class='enlace' href='italia.html'>Conócela</a>">
                                                 <img src="img/pin-ita.png" alt="Pin">
                                             </a>
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="1400" class="pin pin-gre" title="Grecia" data-toggle="popover"
-                                                data-content="<p>Convierta una sopa de lentejas o un estofado en un plato griego.</p><a href='grecia.html'>Conócela</a>">
+                                                data-content="<a href='#' class='cerrarPop'></a><p>Convierta una sopa de lentejas o un estofado en un plato griego.</p><a class='enlace' href='grecia.html'>Conócela</a>">
                                                 <img src="img/pin-gre.png" alt="Pin">
                                             </a>
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="1500" class="pin pin-ori" title="Oriente Medio"
-                                                data-toggle="popover" data-content="<p>Empiece el día con un sabor de oriente dándole un toque especial a sus bebidas.</p><a href='oriente.html'>Conócelo</a>">
+                                                data-toggle="popover" data-content="<a href='#' class='cerrarPop'></a><p>Empiece el día con un sabor de oriente dándole un toque especial a sus bebidas.</p><a class='enlace' href='oriente.html'>Conócelo</a>">
                                                 <img src="img/pin-ori.png" alt="Pin">
                                             </a>
                                             <a href="#" data-aos="fade-down" data-aos-duration="200" data-aos-delay="1600" class="pin pin-ind" title="India" data-toggle="popover"
-                                                data-content="<p>Haga usted el Garam Masala, mezcla de especias típica de la India.</p><a href='india.html'>Conócela</a>">
+                                                data-content="<a href='#' class='cerrarPop'></a><p>Haga usted el Garam Masala, mezcla de especias típica de la India.</p><a class='enlace' href='india.html'>Conócela</a>">
                                                 <img src="img/pin-ind.png" alt="Pin">
                                             </a>
                                         </div>
@@ -486,7 +486,7 @@
                     <div class="hoja hoja-4b"></div>
                     <div class="hoja hoja-4a"></div>
                 </div>
-
+                
             </main>
             <!-- Pie de página-->
             <footer>
@@ -499,6 +499,7 @@
                 </div>
             </footer>
         </article>
+        <a class="btn-volver-home" href="index.html"><img src="img/btn-home.png" alt="Volver al inicio"></a>
     </div>
     <!-- Fin Contenido especial-->
     <footer>
@@ -1658,13 +1659,22 @@
         $(function () {
             $('[data-toggle="popover"]').popover({
                 html: true,
-                trigger: 'click',
+                trigger: 'manual',
                 container: '.cont-pines',
                 animation: false
             })
         });
+        function abrirPop () {
+            $('.pin').popover('hide');
+            $(this).popover('show');
+        }
         $('[data-toggle="popover"]').on('click', function (e) {
             e.preventDefault();
+        });
+        $('.pin').on('click', abrirPop);
+        $('.cont-pines').delegate('.cerrarPop', 'click', function (e) {
+            e.preventDefault();
+            $('.pin').popover('hide');
         });
     </script>
 </body>

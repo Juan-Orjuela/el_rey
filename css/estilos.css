@@ -34,6 +34,22 @@ html #content {
     transform: translateY(10px)
 }
 
+.pasaporte-page .btn-volver-home,
+.pais .btn-volver-home {
+    position: fixed;
+    right: -15px;
+    top: 50%;
+    z-index: 2000;
+    transition: right 400ms;
+    box-shadow: 0 2px 19px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.pasaporte-page .btn-volver-home:hover,
+.pais .btn-volver-home:hover {
+    right: 0;
+}
+
 /*Animaciones*/
 @keyframes hojas {
     from {
@@ -802,7 +818,7 @@ Mapa
     border-bottom: none;
 }
 
-#mapa .popover a {
+#mapa .popover a.enlace {
     background: gray;
     padding: 3px 10px;
     border-radius: 8px;
@@ -813,7 +829,7 @@ Mapa
     transition: left 400ms cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
-#mapa .popover a:hover {
+#mapa .popover a.enlace:hover {
     text-decoration: none;
     left: 4%;
 }
@@ -827,7 +843,7 @@ Mapa
     color: #fff;
 }
 
-#mapa .popover a::before {
+#mapa .popover a.enlace::before {
     content: "";
     display: block;
     background: url('../img/popover-plane.png') no-repeat center;
@@ -838,7 +854,18 @@ Mapa
     right: -40px;
     top: -1px;
 }
-
+.popover .cerrarPop {
+    position: absolute;
+    width: 53px;
+    height: 51px;
+    display: block;
+    background: url('../img/cerrar-am.png');
+    right: 0;
+    bottom: 0;
+}
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover .cerrarPop{
+    background: url('../img/cerrar-rj.png');
+}
 /*Popovers por pais*/
 /*México*/
 #mapa .pin-mex[aria-describedby^="popover"] ~ .popover {
@@ -847,7 +874,7 @@ Mapa
     color: #df4954;
 }
 
-#mapa .pin-mex[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-mex[aria-describedby^="popover"] ~ .popover a.enlace {
     background: #f3c74d;
     color: #df4954;
 }
@@ -868,7 +895,7 @@ Mapa
     color: #df4954;
 }
 
-#mapa .pin-per[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover a.enlace {
     background: #f3c74d;
     color: #df4954;
 }
@@ -880,12 +907,12 @@ Mapa
     border-right-color: #fda624;
 }
 
-#mapa .pin-per[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover a.enlace {
     color: #fff;
     background-color: #d53544;
 }
 
-#mapa .pin-per[aria-describedby^="popover"] ~ .popover a::before {
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover a.enlace::before {
     background: url('../img/popover-plane2.png') no-repeat center;
     background-size: contain;
 }
@@ -913,7 +940,7 @@ Mapa
     border-right-color: #d84150;
 }
 
-#mapa .pin-esc[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-esc[aria-describedby^="popover"] ~ .popover a.enlace {
     color: #f3c74d;
     background-color: #00b2ff;
 }
@@ -930,7 +957,7 @@ Mapa
     color: #df4954;
 }
 
-#mapa .pin-ing[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-ing[aria-describedby^="popover"] ~ .popover a.enlace {
     background: #df4954;
     color: #f3c74d;
 }
@@ -954,7 +981,7 @@ Mapa
     color: #df4954;
 }
 
-#mapa .pin-ita[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-ita[aria-describedby^="popover"] ~ .popover a.enlace {
     background: #d43545;
     color: #f3c74d;
 }
@@ -975,7 +1002,7 @@ Mapa
     color: #df4954;
 }
 
-#mapa .pin-gre[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-gre[aria-describedby^="popover"] ~ .popover a.enlace {
     background: #f3c74d;
     color: #3375ac;
 }
@@ -995,7 +1022,7 @@ Mapa
     color: #df4954;
 }
 
-#mapa .pin-ori[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-ori[aria-describedby^="popover"] ~ .popover a.enlace {
     background: #f3c74d;
     color: #459a34;
 }
@@ -1019,7 +1046,7 @@ Mapa
     color: #df4954;
 }
 
-#mapa .pin-ind[aria-describedby^="popover"] ~ .popover a {
+#mapa .pin-ind[aria-describedby^="popover"] ~ .popover a.enlace {
     background: #008e3c;
     color: #f3c74d;
 }
@@ -1197,6 +1224,7 @@ RESPONSIVE
         text-align: center;
         width: 39px;
     }
+
     #content.pasaporte-page .avion {
         max-width: 120px;
         margin: 50px;
@@ -1206,6 +1234,12 @@ RESPONSIVE
 /*Fin 1200px*/
 /*1100px hacia abajo*/
 @media screen and (max-width: 1099px) {
+    .pasaporte-page .btn-volver-home,
+    .pais .btn-volver-home {
+        width: 80px;
+    }
+
+
     .hoja {
         background-size: contain;
     }
@@ -1455,18 +1489,22 @@ RESPONSIVE
         bottom: 3%;
         max-width: 220px;
     }
+
     /*Mapa*/
     #mapa .cont-pines .pin {
         position: absolute;
         text-align: center;
         width: 30px;
     }
+
     #mapa .nube {
         max-width: 150px;
     }
+
     #mapa .globo {
         width: 70px;
     }
+
     #mapa .barco {
         max-width: 120px;
     }
@@ -1574,29 +1612,68 @@ RESPONSIVE
         bottom: -3%;
         max-width: 160px;
     }
+
     /*Mapa*/
     #mapa-wp {
         position: relative;
         overflow: auto;
         border: 8px solid #ffb929;
         padding: 15% 5% 5%;
-
     }
+
     #mapa-wp::before {
         content: "Desliza >>";
         color: #e40a43;
         font-weight: bold;
         text-transform: uppercase;
-        letter-spacing:0.2em;
+        letter-spacing: 0.2em;
         position: absolute;
         top: 3%;
         width: 100%;
         text-align: center;
-
     }
+
     #mapa {
         min-width: 690px;
         position: relative;
+    }
+
+    /*Flechas popover*/
+    #mapa .pin-mex[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #026e4e;
+    }
+
+    #mapa .pin-per[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #ffa823;
+    }
+
+    #mapa .pin-esc[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #da434f;
+    }
+
+    #mapa .pin-ing[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #0165a1;
+    }
+
+    #mapa .pin-ita[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #2ba35b;
+    }
+
+    #mapa .pin-gre[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #3274ab;
+    }
+
+    #mapa .pin-ori[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #469b34;
+    }
+
+    #mapa .pin-ind[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
+        border-left-color: #eb6b36;
+    }
+    .pasaporte-page .btn-volver-home,
+    .pais .btn-volver-home {
+        width: 60px;
+        right: -10px
     }
 }
 
@@ -1780,6 +1857,10 @@ RESPONSIVE
 
     .pais-ing .r-3 .abs-txt p:last-child {
         bottom: -6%;
+    }
+
+    #mapa .arrow {
+        display: none;
     }
 }
 
