@@ -655,6 +655,93 @@ html #content {
 
 /*
 ============
+Mapa
+============
+*/
+#mapa {
+    position: relative;
+}
+
+#mapa > img, #mapa .cont-pines {
+    position: absolute;
+}
+
+#mapa img.fondo-mapa {
+    position: relative;
+}
+
+#mapa .cont-pines {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#mapa .continentes {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#mapa .globo {
+    
+    top: 20%;
+    left: 5%;
+}
+
+#mapa .cont-pines a {
+    position: absolute;
+}
+
+#mapa .cont-pines a:nth-child(1) {
+    top: 36%;
+    left: 15%;
+}
+#mapa .cont-pines a:nth-child(2) {
+    top: 49%;
+    left: 18%;
+}
+#mapa .cont-pines a:nth-child(3) {
+    top: 16%;
+    left: 46%;
+}
+#mapa .cont-pines a:nth-child(4) {
+    top: 20%;
+    left: 41%;
+}
+#mapa .cont-pines a:nth-child(5) {
+    top: 26%;
+    left: 45%;
+}
+#mapa .cont-pines a:nth-child(6) {
+    top: 28%;
+    left: 49.5%;
+}
+#mapa .cont-pines a:nth-child(7) {
+    top: 35%;
+    left: 56%;
+}
+#mapa .cont-pines a:nth-child(8) {
+    top: 38%;
+    left: 66.5%;
+}
+#mapa .nube:nth-child(4) {
+    top: 8%;
+    left: 15%;
+}
+#mapa .nube:nth-child(5) {
+    top: 63%;
+    left: 5%;
+}
+#mapa .nube:nth-child(6) {
+    top: 19%;
+    left: 75%;
+}
+#mapa .barco {
+    top: 67%;
+    left: 55%;
+}
+/*
+============
 Custom pais
 ============
 */
@@ -1326,18 +1413,19 @@ RESPONSIVE
         top: 114%;
         transform: rotate(-70deg)
     }
+
     .pais-ing .r-2 .el-4 {
         text-align: right;
         margin-top: -6%;
     }
+
     .pais-ing .r-3 {
         margin-top: 0;
         padding-bottom: 60px;
     }
+
     .pais-ing .r-3 .abs-txt p:last-child {
-        
         bottom: -6%;
-        
     }
 }
 
