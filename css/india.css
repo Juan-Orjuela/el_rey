@@ -1,0 +1,182 @@
+
+/*
+============
+Custom pais
+============
+*/
+
+
+.pais-ind .video-rey:after, .pais-ind .video-rey:before {
+    background: url("../img/india_bander_video.png") repeat-y;
+}
+
+
+
+
+.pais-ind h1 {
+    font-size: 240px;
+    color: #f57104;
+    background-image: url("../img/fondo_intro_india.png");
+    background-position: right 5.7% top;
+    padding: .85em 0 .1em;
+}
+
+.pais-ind h1 span {
+    color: #499f11;
+}
+
+
+.pais-ind .encabezado .txt-intro {
+    color: #499f11;
+}
+
+
+
+/*InformaciÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³n*/
+
+.pais-ind .info {
+    margin-top: 10%;
+}
+
+.pais-ind .el-1{
+        color: #499f11;
+
+}
+
+.pais-ind .especias{
+    color:Red;
+    font-size: 18px !important;
+} 
+
+.pais-ind .ingrediente2{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    position: absolute;
+    font-size: 22px;
+    line-height: 24px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 15px rgba(0, 0, 0, .7);
+
+}
+
+
+.pais-ind .signo_mas{
+    position:absolute;
+    top: 32%;
+    left:95%;
+}
+
+.pais-ind .el-7{
+        color: red;
+
+}
+
+.pais-ind .granos{
+    display:flex;
+}
+
+.pais-ind .granos_und{
+
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+}
+
+.pais-ind .el-11{
+    color:red;
+    margin-bottom: 80px;
+}
+
+
+
+/*
+============
+RESPONSIVE
+============
+*/
+
+/*1200px hacia abajo*/
+@media screen and (max-width: 1199px){
+
+}
+
+/*Fin 1200px*/
+
+
+/*1100px hacia abajo*/
+@media screen and (max-width: 1099px) {
+
+}
+/*Fin 1100px*/
+
+/*Fin 1100px*/
+/*992px hacia abajo*/
+@media screen and (max-width: 991px) {
+
+}
+
+
+/*Fin 992px*/
+/*768px hacia abajo*/
+@media screen and (max-width: 768px){
+
+    .pais-ind h1 {
+    font-size: 140px
+}
+
+    .pais-ind .especias{
+    font-size: 14px !important;
+    margin-top: 4%;  
+    } 
+
+}
+
+/*Fin 768px*/
+/*576px hacia abajo*/
+@media screen and (max-width: 576px){
+
+    .pais-ind h1 {
+    font-size: 120px
+    }
+
+    .pais-ind .ingrediente2{
+    font-size: 22px;
+    line-height: 18px;
+    top: 40%;
+    left: 50%;
+    }
+
+    .pais-ind .el-4 .signo_mas{
+        display:none;
+    }
+
+    .rama_movil{
+        display:none;
+    }
+
+  
+}
+
+
+/*Fin 576px*/
+/*480px hacia abajo*/
+@media screen and (max-width: 480px){
+
+    .pais-ind .el-3 .signo_mas{
+        display:none;
+    }
+
+    .pais-ind .el-5 .signo_mas{
+        display:none;
+    }
+
+
+   
+}
+
+/*Fin 480px*/
+
+

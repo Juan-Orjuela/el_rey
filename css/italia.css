@@ -1,0 +1,178 @@
+
+/*
+============
+Custom pais
+============
+*/
+
+
+.pais-ita .video-rey:after, .pais-ita .video-rey:before {
+    background: url("../img/bandera_italia_video.png") repeat-y;
+}
+
+.pais-ita h1 {
+    font-size: 240px;
+    color: #f23333;
+    background-image: url("../img/fondo_intro_italia.png");
+    background-position: right 5.7% top;
+    padding: .85em 0 .1em;
+}
+
+.pais-ita h1 span {
+    top:30%;
+    color: #2e9e5e;
+}
+
+
+.pais-ita .encabezado .txt-intro {
+    color: #2e9e5e;
+}
+
+
+/*Informacion*/
+
+.pais-ita .info {
+    margin-top: 10%;
+}
+
+.pais-ita .txt_latin{
+    color:red;
+}
+
+.pais-ita .signo_mas{
+    position:absolute;
+    top: 46%;
+    left: 95%;
+}
+
+.pais-ita .r-2{
+    margin-top: 5%;
+}
+
+
+.pais-ita .r-2 p{
+    color:red;
+    margin: 0 auto;
+    width: 500px;
+}
+
+
+
+.pais-ita .r-3{
+    color:red;
+}
+
+.pais-ita .r-4{
+    margin-top: -15%;
+}
+
+
+.pais-ita .r-5{
+    margin-top: -5%;
+    color:red;
+}
+
+
+.pais-ita .el-10{
+    margin-top: 50%;
+}
+
+
+.pais-ita .r-6{
+    color: #2e9e5e;
+}
+
+.pais-ita .r-14{
+    margin-top: 10%;
+}
+
+
+
+/*
+============
+RESPONSIVE
+============
+*/
+
+/*1200px hacia abajo*/
+@media screen and (max-width: 1199px){
+
+}
+
+/*Fin 1200px*/
+
+
+/*1100px hacia abajo*/
+@media screen and (max-width: 1099px) {
+
+}
+/*Fin 1100px*/
+
+/*Fin 1100px*/
+/*992px hacia abajo*/
+@media screen and (max-width: 991px) {
+
+}
+
+
+/*Fin 992px*/
+/*768px hacia abajo*/
+@media screen and (max-width: 768px){
+
+    .pais-ita .el-8{
+    margin-top: 10%;
+}
+
+
+}
+
+/*Fin 768px*/
+/*576px hacia abajo*/
+@media screen and (max-width: 576px){
+
+.pais-ita h1 {
+    font-size: 170px;
+}
+
+.pais-ita .signo_mas{
+    display:none;
+
+}
+
+
+.pais-ita .r-1 img{
+   margin: 0 auto;
+   width: 500px;
+
+}
+
+.pais-ita .el-8{
+    margin-top: 20%;
+}
+
+}
+
+
+/*Fin 576px*/
+/*480px hacia abajo*/
+@media screen and (max-width: 480px){
+   
+    .pais-ita h1 {
+    font-size: 100px;
+    }
+
+    #fondo_flor1{ 
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left:120px;
+    }
+
+    #fondo_flor2{ 
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left:120px;
+    }
+
+}
+
+/*Fin 480px*/

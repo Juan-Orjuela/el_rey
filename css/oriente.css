@@ -1,0 +1,442 @@
+
+/*
+============
+Custom pais
+============
+*/
+
+
+.pais-ori .video-rey:after, .pais-ori .video-rey:before {
+    background: url("../img/bandera_video_oriente.png") repeat-y;
+}
+
+
+
+
+.pais-ori h1 {
+    font-size: 180px;
+    color: #65a126;
+    background-image: url("../img/imagen_intro_oriente.png");
+    background-position: right 5.7% top 100%;
+    background-size: 450px;
+    padding: .85em 0 .1em;
+}
+
+.pais-ori h1 span {
+    color: #f23333;
+}
+
+
+.pais-ori .encabezado .txt-intro {
+    color: #65a126;
+}
+
+.pais-ori .encabezado .txt-intro2 {
+    font-size: 34px;
+    line-height: 1.2;
+    color: #f23333;
+}
+
+
+
+/*Informacion*/
+
+.pais-ori .info {
+    margin-top: 20%;
+}
+
+
+.pais-ori .txt_rojo {
+    color: #f23333;
+}
+
+
+.pais-ori .txt_verde {
+    color: #65a126;
+}
+
+
+
+.pais-ori  #recipiente{
+    position:absolute;
+    top: 30%;
+}
+
+.pais-ori #flechas_rojas{
+    position:relative;
+    left: 50%;
+}
+
+.pais-ori .el-3{
+    margin-top: -30%;
+    position:absolute;
+    left:9%;
+}
+
+
+
+.bebidas p{
+    position:absolute;
+    right: -22%;
+    margin-top: -150px;
+
+}
+
+.pais-ori .r-2{
+    margin-top: 5%;
+}
+
+.pais-ori .r-2 p{
+    margin-top: 10%;
+}
+
+
+.pais-ori #flecha_verde{
+    position: absolute;
+    top: 120%;
+    right: 40%;
+
+}
+
+.pais-ori #flecha_corta{
+    position: relative;
+    left: 30%;
+}
+
+.pais-ori .r-3{
+    margin-top:20%;
+    margin-bottom: 10%;
+} 
+
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+
+
+
+/*
+============
+RESPONSIVE
+============
+*/
+
+/*1200px hacia abajo*/
+@media screen and (max-width: 1199px) {
+}
+
+/*Fin 1200px*/
+
+
+/*1100px hacia abajo*/
+@media screen and (max-width: 1099px) {
+
+}
+/*Fin 1100px*/
+
+
+/*992px hacia abajo*/
+@media screen and (max-width: 991px){
+
+    .pais-es h1 {
+        font-size: 94px;
+        background-position: right 3.7% top;
+    }
+
+
+    .pais-es .el-1 .img-txt:after {
+    width: 153%;
+    height: 150%;
+    left: 32%;
+    top: 50%;
+}
+
+
+
+.pais-es .el-3:after {
+    width: 330%;
+    height: 330%;
+    left: 150%;
+    top: 26%;
+ 
+
+}
+
+
+.pais-es .el-6:after {
+
+    width: 180%;
+    height: 150%;
+    left: 40%;
+    bottom:-100%;
+   
+}
+
+
+}
+/*Fin 992px*/
+
+
+/*768px hacia abajo*/
+
+@media screen and (max-width: 767px){
+
+
+    .pais-es h1 {
+        font-size: 68px;
+    }
+
+
+    .pais-es #espiral{
+    left: 130%;
+    top: -120px;
+}
+
+
+.pais-es .el-5 {
+    left: 120px;
+}
+
+
+.pais-es .r-2 {
+    margin-top: 22%;
+
+}
+
+.pais-es .r-3 {
+    margin-top: 10%;
+
+}
+
+
+.pais-es .el-7 {
+    margin-top: 2%;
+}
+
+.pais-es .r-4 {
+    margin-top: 10%;
+    color: #ff2e2e;
+    margin-bottom: 100px;
+}
+
+
+.pais-es .el-1 .img-txt:after {
+    width: 162%;
+    height: 160%;
+    left: 30%;
+    top: 45%;
+}
+
+
+
+
+.pais-es .el-3:after {
+    width: 410%;
+    height: 410%;
+    left: 107%;
+
+}
+
+
+.pais-es .el-5 {
+    left: 121px;
+}
+
+
+.pais-es .r-3 {
+    margin-top: 12%;
+}
+
+
+}
+/*Fin 768px*
+
+
+/*576px hacia abajo*/
+@media screen and (max-width: 575px){
+
+
+
+    .pais-es h1 {
+    font-size: 70px;
+    background-position: right 5.7% top;
+    padding: .85em 0 .1em;
+}
+
+    .pais-es #espiral{
+    left: 115%;
+    top: -103px;jm
+    width: 50px;
+
+}
+
+
+.pais-es .el-5 {
+    left: 40px;
+}
+
+
+.pais-es .el-7 {
+    margin-top: 20%;
+    margin-right: 20%;
+}
+
+.pais-es .r-4 {
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+
+.pais-es .escritorio {
+    display: none;
+}
+
+.pais-es .mobile {
+    display: block;
+}
+
+.pais-es .el-5 {
+    position:relative;
+    top: -160px;
+    left: -100px;
+
+
+}
+
+
+.pais-es .el-4 p {
+    position:relative;
+    top:55px;
+    left: 190px;
+
+}
+
+.pais-es .el-4 #espiral {
+    position:relative;
+    top: -60px;
+    left: 100px;
+
+}
+
+
+.pais-es .el-4 img {
+    position:relative;
+    top: -120px;
+    left: 200px;
+
+}
+
+
+.pais-es .el-3 {
+    position:relative;
+    top: 60px;
+    left: 50px;
+    width: 150px;
+
+}
+
+
+.pais-es .img_banderas{
+    position:relative;
+    right: 50px;
+}
+
+
+.pais-es .el-1 .img-txt:after {
+    width: 140%;
+    height: 140%;
+    left: 23%;
+    top: 70%;
+    transform: rotate(-9deg);
+
+}
+
+
+.pais-es .el-3:after {
+    width: 260%;
+    height: 260%;
+    left: 50%;
+    top: -10%;
+}
+
+    
+}
+/*Fin 576px*/
+
+
+/*480px hacia abajo*/
+@media screen and (max-width: 480px){
+
+
+    .pais-es h1 {
+    font-size: 60px;
+}
+
+
+
+
+
+.pais-es .el-4 #espiral {
+    position:relative;
+    top: -60px;
+    left: 100px;
+    width: 50px;
+
+}
+
+.pais-es .el-4 img {
+    position:relative;
+    top: -100px;
+    left: 230%;
+}
+
+
+.pais-es .el-4 p{
+    left: 200%;
+    margin-top: 20%;
+
+}
+
+
+.pais-es .el-5 {
+    position:relative;
+    top: -120px;
+    left: -80px;
+}
+
+
+.pais-es .el-7 {
+    margin-top: 0%;
+}
+
+
+.pais-es .el-1 .img-txt:after {
+    width: 120%;
+    height: 140%;
+    left: 25%;
+    top: 60%;
+
+}
+
+
+.pais-es .el-3:after {
+    width: 140%;
+    height: 140%;
+    left: 65%;
+    top: 75%;
+}
+
+
+.pais-es .txtBanderas{
+    width: 400px;
+}
+
+}
+
+
+/*Fin 480px*/
+
+

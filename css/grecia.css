@@ -1,0 +1,279 @@
+
+/*
+============
+Custom pais
+============
+*/
+
+
+.pais-gr .video-rey:after, .pais-gr .video-rey:before {
+    background: url("../img/band_gre_video.png") repeat-y;
+}
+
+
+.pais-gr h1 {
+    font-size: 200px;
+    color: #ffff;
+    background-image: url("../img/img_intro_grecia.png");
+    padding: .50em 0 .1em;
+}
+
+.pais-gr h1 span {
+    top: 15%;
+    left:35%;
+    color: #4287be;
+}
+
+.pais-gr .encabezado .txt-intro {
+    color: #4287be;
+}
+
+
+.pais-gr p{
+    color: #3b698c;
+
+}
+
+
+/*InformaciÃƒÂ³n*/
+
+.pais-gr .info {
+    margin-top: 10%;
+}
+
+ 
+.pais-es .el-1 .ingrediente {
+    left: 60%;
+}
+
+
+.pais-gr .el-1 p{
+    margin-top: -10%;
+}
+
+
+.pais-gr .el-1 .txt_intro{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 3%;
+
+}
+
+
+
+.pais-gr .r-2 {
+    margin-top: 5%;
+
+}
+
+.pais-gr .r-2 p{
+    margin: 0 auto;
+    margin-top: -55%;
+}
+
+.tiempo_mobile{
+    display:none;
+}
+
+.pais-gr .r-3{
+    margin-top: 350px;
+}
+
+.pais-gr .el-5{
+    margin-top: -200px;
+}
+
+.pais-gr .r-4{
+    margin-top: 80px;
+}
+
+
+
+/*
+============
+RESPONSIVE
+============
+*/
+
+/*1200px hacia abajo*/
+@media screen and (max-width: 1199px) {
+}
+
+/*Fin 1200px*/
+
+
+/*1100px hacia abajo*/
+@media screen and (max-width: 1099px) {
+
+}
+/*Fin 1100px*/
+
+
+/*992px hacia abajo*/
+@media screen and (max-width: 991px){
+
+    
+/*Fin 992px*/
+
+
+/*768px hacia abajo*/
+
+@media screen and (max-width: 768px){
+    
+    .pais-gr h1 {
+    font-size: 140px;
+}
+
+.pais-gr h1 span {
+    left:30%;
+}
+
+.pais-gr .el-4{
+    width: 300px;
+    position:absolute;
+    right: -15px;
+    top: -60px;
+}
+
+
+.pais-gr .el-5{
+    width: 250px;
+    position:absolute;
+    right: -15px;
+    top: -70px;
+}
+
+.pais-gr .el-6{
+    width: 300px;
+    position:absolute;
+    right: px;
+    top: -70px;
+}
+
+
+.pais-gr .r-3{
+    margin-bottom: 700px;
+}
+
+/*Fin 768px*
+
+
+/*576px hacia abajo*/
+@media screen and (max-width: 576px){
+
+        
+    .pais-gr h1 {
+    font-size: 130px;
+}
+
+.pais-gr h1 span {
+    left:40%;
+}
+
+.pais-gr .el-4{
+    width: 300px;
+    position:absolute;
+    left: -80px;
+    top: -80px;
+}
+
+
+.pais-gr .el-5{
+    width: 250px;
+    position:absolute;
+    top: -6px;
+}
+
+
+.pais-gr .el-5 #arbol{
+    width: 100%;
+    position:relative;
+    top: -100px;
+}
+
+
+.pais-gr .el-6{
+    width: 300px;
+    position:absolute;
+    left: -80px;
+    top: -80px;
+}
+
+
+/*Fin 576px*/
+
+
+/*480px hacia abajo*/
+@media screen and (max-width: 480px){
+
+          
+    .pais-gr h1 {
+    font-size: 120px;
+}
+
+.pais-gr h1 span {
+    left:42%;
+}
+
+.pais-gr .el-4{
+    position:relative;
+    left: 10%;
+    top: 0px;
+    margin-top:-200px;
+    margin-bottom: 250px;
+}
+
+
+.pais-gr .el-4 p{
+    position:relative;
+    top: -80px;
+    left: 30px;
+    font-size: 22px !important;
+}
+
+
+.pais-gr .el-5{
+    position:relative;
+    top: -0px;
+    left: 20%;
+}
+
+
+.pais-gr .el-5 p{
+    font-size: 22px !important;
+}
+
+
+.pais-gr .el-5 #arbol{
+    position:relative;
+    top: 0;
+}
+
+
+.pais-gr .el-6{
+    position:relative;
+    left: 20%;
+    top: 0px;
+}
+
+
+.pais-gr .el-6 p{
+    position:relative;
+    top: -80px;
+    left: -30px;
+    font-size: 22px !important;
+}
+
+.pais-gr .r-3{
+    margin-bottom: -60px;
+}
+
+p{
+   font-size:22px !important;
+
+
+}
+
+/*Fin 480px*/
+
+

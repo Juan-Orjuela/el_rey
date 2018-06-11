@@ -1,0 +1,176 @@
+
+/*
+============
+Custom pais
+============
+*/
+
+
+.pais-mex .video-rey:after, .pais-mex .video-rey:before {
+    background: url("../img/bandera_video_mexico.png") repeat-y;
+}
+
+
+
+
+.pais-mex h1 {
+    font-size: 180px;
+    color: #c21e29;
+    background-image: url("../img/img_intro_mex.png");
+    background-position: right 5.7% top 100%;
+    background-size: 450px;
+    padding: .85em 0 .1em;
+}
+
+.pais-mex h1 span {
+    color: #c21e29;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+.pais-mex .encabezado .txt-intro {
+    color: #c21e29;
+}
+
+.pais-mex .txt_rojo{
+        color: #c21e29;
+}
+
+.pais-mex .txt_verde{
+        color: #3d6d50;
+}
+
+
+.pais-mex .r-2{
+   margin-top: 10%;
+   margin-bottom: 10%;
+}
+
+
+
+.pais-mex .el-1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: url("../img/aji_izq_mex.png") no-repeat;
+    background-size: contain;
+    right: 90%;
+    top: 0%;
+    z-index:-1000;
+}
+
+.pais-mex .el-3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: url("../img/aji_der_mex.png") no-repeat;
+    background-size: contain;
+    left: 220%;
+    top: 0%;
+    z-index:-1000;
+}
+
+
+    .centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+
+/*
+============
+RESPONSIVE
+============
+*/
+
+/*1200px hacia abajo*/
+@media screen and (max-width: 1199px){
+
+}
+
+/*Fin 1200px*/
+
+
+/*1100px hacia abajo*/
+@media screen and (max-width: 1099px) {
+
+}
+/*Fin 1100px*/
+
+/*Fin 1100px*/
+/*992px hacia abajo*/
+@media screen and (max-width: 992px) {
+
+    .pais-mex .el-1:after{
+        display:none;
+    }
+
+    .pais-mex .el-3:after{
+        display:none;
+    }
+
+}
+
+
+/*Fin 992px*/
+/*768px hacia abajo*/
+@media screen and (max-width: 768px){
+
+     .pais-mex h1 {
+    font-size: 130px;
+
+    }
+
+    .pais-mex h1 span {
+    margin-left: 20%;
+    margin-top: 1%;
+    }
+
+}
+
+/*Fin 768px*/
+/*576px hacia abajo*/
+@media screen and (max-width: 576px){
+
+
+
+
+
+}
+
+
+/*Fin 576px*/
+/*480px hacia abajo*/
+@media screen and (max-width: 480px){
+   
+     .pais-mex h1 {
+    font-size: 80px;
+    margin-top: 40px;
+    background-size: 330px;
+
+    }
+    
+    .pais-mex h1 span {
+    margin-left: 20%;
+    margin-top: -10%;
+    }
+
+    .ingre_movil{
+    margin: 0 auto;
+    width: 500px;
+
+    }
+
+
+
+
+}
+
+/*Fin 480px*/
