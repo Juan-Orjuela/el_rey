@@ -36,12 +36,11 @@ html #content {
     text-decoration: none;
     color: #ffd860;
     -webkit-transform: translateY(10px);
-        -ms-transform: translateY(10px);
-            transform: translateY(10px)
+    -ms-transform: translateY(10px);
+    transform: translateY(10px)
 }
 
-.pasaporte-page .btn-volver-home,
-.pais .btn-volver-home {
+.pasaporte-page .btn-volver-home, .pais .btn-volver-home {
     position: fixed;
     right: -15px;
     top: 50%;
@@ -50,12 +49,11 @@ html #content {
     -o-transition: right 400ms;
     transition: right 400ms;
     -webkit-box-shadow: 0 2px 19px rgba(0,0,0,.6);
-            box-shadow: 0 2px 19px rgba(0,0,0,.6);
+    box-shadow: 0 2px 19px rgba(0,0,0,.6);
     border-radius: 10px;
 }
 
-.pasaporte-page .btn-volver-home:hover,
-.pais .btn-volver-home:hover {
+.pasaporte-page .btn-volver-home:hover, .pais .btn-volver-home:hover {
     right: 0;
 }
 
@@ -63,23 +61,24 @@ html #content {
 @-webkit-keyframes hojas {
     from {
         -webkit-transform: rotate(-7deg);
-                transform: rotate(-7deg);
+        transform: rotate(-7deg);
     }
 
     to {
         -webkit-transform: rotate(7deg);
-                transform: rotate(7deg);
+        transform: rotate(7deg);
     }
 }
+
 @keyframes hojas {
     from {
         -webkit-transform: rotate(-7deg);
-                transform: rotate(-7deg);
+        transform: rotate(-7deg);
     }
 
     to {
         -webkit-transform: rotate(7deg);
-                transform: rotate(7deg);
+        transform: rotate(7deg);
     }
 }
 
@@ -107,10 +106,10 @@ html #content {
     left: -6px;
     top: 25px;
     -webkit-animation: hojas 2000ms ease-in-out infinite alternate;
-            animation: hojas 2000ms ease-in-out infinite alternate;
+    animation: hojas 2000ms ease-in-out infinite alternate;
     -webkit-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-            transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
 }
 
 .hoja-1b {
@@ -120,10 +119,10 @@ html #content {
     left: 0;
     bottom: 0;
     -webkit-animation: hojas 2800ms ease-in-out infinite alternate;
-            animation: hojas 2800ms ease-in-out infinite alternate;
+    animation: hojas 2800ms ease-in-out infinite alternate;
     -webkit-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-            transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
 }
 
 .hoja-2 {
@@ -139,10 +138,10 @@ html #content {
     left: -6px;
     top: 25px;
     -webkit-animation: hojas 3500ms ease-in-out infinite alternate;
-            animation: hojas 3500ms ease-in-out infinite alternate;
+    animation: hojas 3500ms ease-in-out infinite alternate;
     -webkit-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-            transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
 }
 
 .hoja-2b {
@@ -152,10 +151,10 @@ html #content {
     left: 0;
     bottom: 0;
     -webkit-animation: hojas 2900ms ease-in-out infinite alternate;
-            animation: hojas 2900ms ease-in-out infinite alternate;
+    animation: hojas 2900ms ease-in-out infinite alternate;
     -webkit-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-            transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
 }
 
 .hoja-3 {
@@ -164,10 +163,10 @@ html #content {
     background-image: url("../img/hoja-3.png");
     left: -15px;
     -webkit-animation: hojas 2200ms ease-in-out infinite alternate;
-            animation: hojas 2200ms ease-in-out infinite alternate;
+    animation: hojas 2200ms ease-in-out infinite alternate;
     -webkit-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-            transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
 }
 
 .hoja-4 {
@@ -184,10 +183,10 @@ html #content {
     right: -6px;
     top: 0;
     -webkit-animation: hojas 2900ms ease-in-out infinite alternate;
-            animation: hojas 2900ms ease-in-out infinite alternate;
+    animation: hojas 2900ms ease-in-out infinite alternate;
     -webkit-transform-origin: 80% 50%;
-        -ms-transform-origin: 80% 50%;
-            transform-origin: 80% 50%;
+    -ms-transform-origin: 80% 50%;
+    transform-origin: 80% 50%;
 }
 
 .hoja-4b {
@@ -197,10 +196,10 @@ html #content {
     right: -2px;
     bottom: 0;
     -webkit-animation: hojas 2800ms ease-in-out infinite alternate;
-            animation: hojas 2800ms ease-in-out infinite alternate;
+    animation: hojas 2800ms ease-in-out infinite alternate;
     -webkit-transform-origin: 100% 50%;
-        -ms-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
 }
 
 .hoja-5 {
@@ -217,10 +216,10 @@ html #content {
     overflow: hidden;
     background-image: url("../img/hoja-5.png");
     -webkit-animation: hojas 2100ms ease-in-out infinite alternate;
-            animation: hojas 2100ms ease-in-out infinite alternate;
+    animation: hojas 2100ms ease-in-out infinite alternate;
     -webkit-transform-origin: 100% 50%;
-        -ms-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
 }
 
 /*Encabezado*/
@@ -231,8 +230,9 @@ html #content {
     border-bottom: 3px solid #ffd860;
     position: relative;
     -webkit-box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
-            box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
     z-index: 2;
+    overflow: hidden;
 }
 
 #content header img {
@@ -245,7 +245,7 @@ html #content {
     font-family: 'Pacifico', cursive;
     font-size: 108px;
     color: #ffd860;
-    text-shadow: 0 0 15px rgba(0,0,0,.4);
+    text-shadow: 0 0 15px rgba(0,0,0,.6);
     position: relative;
     z-index: 2;
 }
@@ -260,14 +260,15 @@ html #content {
 }
 
 #content header:before {
-    right: 55%;
+    right: 53%;
     background: url("../img/fondo-av.png") no-repeat right 80px bottom;
 }
 
 #content header:after {
-    left: 55%;
+    left: 53%;
     background: url("../img/fondo-av-2.png") no-repeat left bottom;
 }
+
 /*Video*/
 #content aside {
     position: relative;
@@ -278,7 +279,7 @@ html #content {
     z-index: 1;
     line-height: 0;
     -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, .8);
-            box-shadow: 0 0 25px 5px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, .8);
 }
 
 #content aside .video-rey:before, #content aside .video-rey:after {
@@ -333,7 +334,7 @@ html #content {
     background-position: center;
     background-color: #ffd860;
     -webkit-box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
-            box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
     padding-top: 130px;
     padding-bottom: 0;
     position: relative;
@@ -348,7 +349,7 @@ html #content {
 #content main .hoja-3 {
     top: 50%;
     -webkit-animation: hojas 4200ms ease-in-out infinite alternate;
-            animation: hojas 4200ms ease-in-out infinite alternate;
+    animation: hojas 4200ms ease-in-out infinite alternate;
 }
 
 #content main .hoja-5 {
@@ -381,7 +382,7 @@ html #content {
     text-align: center;
     padding-top: 25px;
     -webkit-box-shadow: 0 6px 25px 2px rgba(117, 99, 36, 0.5);
-            box-shadow: 0 6px 25px 2px rgba(117, 99, 36, 0.5);
+    box-shadow: 0 6px 25px 2px rgba(117, 99, 36, 0.5);
     -webkit-transition: -webkit-transform 500ms ease;
     transition: -webkit-transform 500ms ease;
     -o-transition: transform 500ms ease;
@@ -455,7 +456,7 @@ html #content {
     padding: 1px 18px;
     margin-bottom: 40px;
     -webkit-box-shadow: 0 6px 20px rgba(0, 0 , 0 ,.5);
-            box-shadow: 0 6px 20px rgba(0, 0 , 0 ,.5);
+    box-shadow: 0 6px 20px rgba(0, 0 , 0 ,.5);
     -webkit-transition: border 500ms, -webkit-transform 300ms ease 200ms;
     transition: border 500ms, -webkit-transform 300ms ease 200ms;
     -o-transition: transform 300ms ease 200ms, border 500ms;
@@ -467,8 +468,8 @@ html #content {
 /*Hovers*/
 .box:hover {
     -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .box:hover .img:before {
@@ -477,8 +478,8 @@ html #content {
 
 .box:hover .img, .box:hover h3, .box:hover p, .box:hover a {
     -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 /*Customs*/
@@ -639,7 +640,7 @@ html #content {
     height: 100%;
     top: 0;
     -webkit-box-shadow: 2px 0px 15px 0px rgba(117, 99, 36, 0.3);
-            box-shadow: 2px 0px 15px 0px rgba(117, 99, 36, 0.3);
+    box-shadow: 2px 0px 15px 0px rgba(117, 99, 36, 0.3);
     -webkit-transition: -webkit-transform 500ms ease 100ms;
     transition: -webkit-transform 500ms ease 100ms;
     -o-transition: transform 500ms ease 100ms;
@@ -676,8 +677,8 @@ html #content {
 
 .pasaporte .box:hover ~ .phoja {
     -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .box-es:before {
@@ -761,8 +762,8 @@ html #content {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-shadow: 0 0 15px rgba(0, 0, 0, .7);
 }
 
@@ -860,55 +861,61 @@ Mapa
 
 #mapa .nube {
     -webkit-animation: nubes linear infinite alternate;
-            animation: nubes linear infinite alternate;
+    animation: nubes linear infinite alternate;
 }
 
 #mapa .nube:nth-child(4) {
     top: 8%;
     left: 15%;
     -webkit-animation-duration: 5000ms;
-            animation-duration: 5000ms;
+    animation-duration: 5000ms;
 }
 
 #mapa .nube:nth-child(5) {
     top: 63%;
     left: 5%;
     -webkit-animation-delay: 1500ms;
-            animation-delay: 1500ms;
+    animation-delay: 1500ms;
     -webkit-animation-duration: 6000ms;
-            animation-duration: 6000ms;
+    animation-duration: 6000ms;
 }
 
 #mapa .nube:nth-child(6) {
     top: 19%;
     left: 75%;
     -webkit-animation-delay: 500ms;
-            animation-delay: 500ms;
+    animation-delay: 500ms;
     -webkit-animation-duration: 8000ms;
-            animation-duration: 8000ms;
+    animation-duration: 8000ms;
 }
 
 #mapa .barco {
     top: 67%;
     left: 55%;
+    -webkit-animation: nubes linear infinite alternate;
+    animation: nubes linear infinite alternate;
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+    -webkit-animation-duration: 9000ms;
+    animation-duration: 9000ms;
 }
 
 /*Animaciones mapa*/
 .fondo-mapa {
     -webkit-transform: scaleX(0.1)!important;
-        -ms-transform: scaleX(0.1)!important;
-            transform: scaleX(0.1)!important;
-    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89)!important;
-    transition: -webkit-transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89)!important;
-    -o-transition: transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89)!important;
-    transition: transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89)!important;
-    transition: transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89), -webkit-transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89)!important;
+    -ms-transform: scaleX(0.1)!important;
+    transform: scaleX(0.1)!important;
+    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89) 900ms;
+    transition: -webkit-transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89) 900ms;
+    -o-transition: transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89) 900ms;
+    transition: transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89) 900ms;
+    transition: transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89) 900ms, -webkit-transform 400ms cubic-bezier(0.24, -0.21, 0.65, 1.89) 900ms;
 }
 
 .fondo-mapa.aos-animate {
     -webkit-transform: scaleX(1)!important;
-        -ms-transform: scaleX(1)!important;
-            transform: scaleX(1)!important;
+    -ms-transform: scaleX(1)!important;
+    transform: scaleX(1)!important;
 }
 
 /*Popovers*/
@@ -918,7 +925,7 @@ Mapa
     border-radius: 12px;
     padding: 8px 8px 12px;
     -webkit-box-shadow: 0 0 18px rgba(0,0,0,.4);
-            box-shadow: 0 0 18px rgba(0,0,0,.4);
+    box-shadow: 0 0 18px rgba(0,0,0,.4);
 }
 
 .popover-header {
@@ -970,6 +977,7 @@ Mapa
     right: -40px;
     top: -1px;
 }
+
 .popover .cerrarPop {
     position: absolute;
     width: 53px;
@@ -979,9 +987,11 @@ Mapa
     right: 0;
     bottom: 0;
 }
-#mapa .pin-per[aria-describedby^="popover"] ~ .popover .cerrarPop{
+
+#mapa .pin-per[aria-describedby^="popover"] ~ .popover .cerrarPop {
     background: url('../img/cerrar-rj.png');
 }
+
 /*Popovers por pais*/
 /*México*/
 #mapa .pin-mex[aria-describedby^="popover"] ~ .popover {
@@ -1359,11 +1369,9 @@ RESPONSIVE
 /*Fin 1200px*/
 /*1100px hacia abajo*/
 @media screen and (max-width: 1099px) {
-    .pasaporte-page .btn-volver-home,
-    .pais .btn-volver-home {
+    .pasaporte-page .btn-volver-home, .pais .btn-volver-home {
         width: 80px;
     }
-
 
     .hoja {
         background-size: contain;
@@ -1470,6 +1478,16 @@ RESPONSIVE
 
     #content aside .video-rey:after {
         right: -15px;
+    }
+
+    #content header:before {
+        right: 53%;
+        background: url("../img/fondo-av.png") no-repeat right 60px bottom;
+    }
+
+    #content header:after {
+        left: 53%;
+        background: url("../img/fondo-av-2.png") no-repeat left -30px bottom;
     }
 }
 
@@ -1637,6 +1655,15 @@ RESPONSIVE
     #mapa .barco {
         max-width: 120px;
     }
+    #content header:before {
+        right: 53%;
+        background: url("../img/fondo-av.png") no-repeat right 10px bottom;
+    }
+
+    #content header:after {
+        left: 53%;
+        background: url("../img/fondo-av-2.png") no-repeat left -110px bottom;
+    }
 }
 
 /*Fin 992px*/
@@ -1701,6 +1728,11 @@ RESPONSIVE
 
     .pais .flecha img {
         width: 50px;
+    }
+
+    .inicio aside .container {
+        max-width: 100%;
+        padding: 0;
     }
 
     /*Inglaterra*/
@@ -1803,10 +1835,23 @@ RESPONSIVE
     #mapa .pin-ind[aria-describedby^="popover"] ~ .popover.bs-popover-left .arrow:after {
         border-left-color: #eb6b36;
     }
-    .pasaporte-page .btn-volver-home,
-    .pais .btn-volver-home {
+
+    .pasaporte-page .btn-volver-home, .pais .btn-volver-home {
         width: 60px;
         right: -10px
+    }
+    #content header:before {
+        right: 53%;
+        background: url("../img/fondo-av.png") no-repeat right 15% bottom;
+        background-size: 180%;
+         transform: scaleY(-1);
+    }
+
+    #content header:after {
+        left: 53%;
+        background: url("../img/fondo-av-2.png") no-repeat right 10% bottom;
+        background-size: 180%;
+        transform: scaleY(-1);
     }
 }
 
@@ -1950,7 +1995,7 @@ RESPONSIVE
     .pais-ing .r-1 > .col-6, .pais-ing .r-2 > .col-6 {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
-                flex: 0 0 100%;
+        flex: 0 0 100%;
         max-width: 100%;
     }
 
@@ -1965,8 +2010,8 @@ RESPONSIVE
         left: 0%;
         top: 100%;
         -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-                transform: rotate(90deg)
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg)
     }
 
     .pais-ing .r-2 .el-3 {
@@ -1979,8 +2024,8 @@ RESPONSIVE
         right: -22%;
         top: 114%;
         -webkit-transform: rotate(-70deg);
-            -ms-transform: rotate(-70deg);
-                transform: rotate(-70deg)
+        -ms-transform: rotate(-70deg);
+        transform: rotate(-70deg)
     }
 
     .pais-ing .r-2 .el-4 {
