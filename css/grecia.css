@@ -111,7 +111,7 @@ RESPONSIVE
 
 /*992px hacia abajo*/
 @media screen and (max-width: 991px){
-
+}
     
 /*Fin 992px*/
 
@@ -154,7 +154,7 @@ RESPONSIVE
 .pais-gr .r-3{
     margin-bottom: 700px;
 }
-
+}
 /*Fin 768px*
 
 
@@ -198,7 +198,7 @@ RESPONSIVE
     left: -80px;
     top: -80px;
 }
-
+}
 
 /*Fin 576px*/
 
@@ -273,7 +273,5 @@ p{
 
 
 }
-
+}
 /*Fin 480px*/
-
-
