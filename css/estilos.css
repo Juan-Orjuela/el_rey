@@ -236,14 +236,14 @@ html #content {
 }
 
 #content header img {
-    width: 190px;
+    width: 145px;
     position: relative;
     z-index: 2;
 }
 
 #content header h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 108px;
+    font-size: 90px;
     color: #ffd860;
     text-shadow: 0 0 15px rgba(0,0,0,.6);
     position: relative;
@@ -260,12 +260,12 @@ html #content {
 }
 
 #content header:before {
-    right: 53%;
+    right: 55%;
     background: url("../img/fondo-av.png") no-repeat right 80px bottom;
 }
 
 #content header:after {
-    left: 53%;
+    left: 55%;
     background: url("../img/fondo-av-2.png") no-repeat left bottom;
 }
 
@@ -282,7 +282,7 @@ html #content {
     box-shadow: 0 0 25px 5px rgba(0, 0, 0, .8);
 }
 
-#content aside .video-rey:before, #content aside .video-rey:after {
+/*#content aside .video-rey:before, #content aside .video-rey:after {
     content: "";
     display : block;
     position: absolute;
@@ -298,7 +298,7 @@ html #content {
 #content aside .video-rey:after {
     right: -50px;
 }
-
+*/
 #content aside::before, #content aside::after {
     content: "";
     position: absolute;
@@ -1495,7 +1495,7 @@ RESPONSIVE
 /*992px hacia abajo*/
 @media screen and (max-width: 991px) {
     #content header img {
-        width: 170px;
+        width: 130px;
     }
 
     #content aside::before, #content aside::after {
@@ -1508,7 +1508,7 @@ RESPONSIVE
     }
 
     #content header h2 {
-        font-size: 97px;
+        font-size: 80px;
     }
 
     .box h3 {
@@ -1674,7 +1674,7 @@ RESPONSIVE
     }
 
     #content header h2 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .box h3 {
@@ -1952,7 +1952,7 @@ RESPONSIVE
 /*480px hacia abajo*/
 @media screen and (max-width: 480px) {
     #content header img {
-        width: 114px;
+        width: 100px;
     }
 
     #content header h2 {
