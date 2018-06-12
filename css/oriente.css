@@ -114,9 +114,9 @@ Custom pais
     margin-right: auto;
     }
 
-
-
-
+#flechas_rojas2{
+        display:none;
+    }    
 
 /*
 ============
@@ -125,7 +125,8 @@ RESPONSIVE
 */
 
 /*1200px hacia abajo*/
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px){
+
 }
 
 /*Fin 1200px*/
@@ -137,306 +138,172 @@ RESPONSIVE
 }
 /*Fin 1100px*/
 
-
+/*Fin 1100px*/
 /*992px hacia abajo*/
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px) {
 
-    .pais-es h1 {
-        font-size: 94px;
-        background-position: right 3.7% top;
+    .pais-ori h1 {
+    font-size: 160px;
+    background-size: 380px;
     }
 
+    .pais-ori .info {
+    margin-top: 10%;
+    }
 
-    .pais-es .el-1 .img-txt:after {
-    width: 153%;
-    height: 150%;
-    left: 32%;
-    top: 50%;
-}
+    .olla{
+        margin-top: 50%;
+    }
 
-
-
-.pais-es .el-3:after {
-    width: 330%;
-    height: 330%;
-    left: 150%;
-    top: 26%;
- 
-
-}
-
-
-.pais-es .el-6:after {
-
-    width: 180%;
-    height: 150%;
-    left: 40%;
-    bottom:-100%;
+    #flechas_rojas{
+        margin-left:-80px;
+    }
    
+    .col_bebidas{
+        margin-left:-80px;
+    }
+
 }
 
 
-}
 /*Fin 992px*/
-
-
 /*768px hacia abajo*/
+@media screen and (max-width: 768px){
 
-@media screen and (max-width: 767px){
+    .el-1{
+        margin-bottom: 150px;
+    }
 
-
-    .pais-es h1 {
-        font-size: 68px;
+    .pais-ori .r-2{
+        margin-top: 150px;
     }
 
 
-    .pais-es #espiral{
-    left: 130%;
-    top: -120px;
 }
 
-
-.pais-es .el-5 {
-    left: 120px;
-}
-
-
-.pais-es .r-2 {
-    margin-top: 22%;
-
-}
-
-.pais-es .r-3 {
-    margin-top: 10%;
-
-}
-
-
-.pais-es .el-7 {
-    margin-top: 2%;
-}
-
-.pais-es .r-4 {
-    margin-top: 10%;
-    color: #ff2e2e;
-    margin-bottom: 100px;
-}
-
-
-.pais-es .el-1 .img-txt:after {
-    width: 162%;
-    height: 160%;
-    left: 30%;
-    top: 45%;
-}
-
-
-
-
-.pais-es .el-3:after {
-    width: 410%;
-    height: 410%;
-    left: 107%;
-
-}
-
-
-.pais-es .el-5 {
-    left: 121px;
-}
-
-
-.pais-es .r-3 {
-    margin-top: 12%;
-}
-
-
-}
-/*Fin 768px*
-
-
+/*Fin 768px*/
 /*576px hacia abajo*/
-@media screen and (max-width: 575px){
+@media screen and (max-width: 576px){
+
+    .pais-ori h1 {
+    font-size: 100px;
+    background-size: 250px;
+    }
+
+    .el-1{
+    margin-bottom: -200px;
+    }
+
+    #flechas_rojas{
+        display:none;
+    }
+
+    #flechas_rojas2{
+        display:block;
+    }
 
 
+    .bebidas{
+        position:relative;
+    }
 
-    .pais-es h1 {
-    font-size: 70px;
-    background-position: right 5.7% top;
-    padding: .85em 0 .1em;
-}
+    .btea{
+        top: 100px;
+        left: 50px;
+    }
 
-    .pais-es #espiral{
-    left: 115%;
-    top: -103px;
-    width: 50px;
+    .btea p{
+        top: 400px;
+        left: -70px;
+    }
 
-}
+    .bcafe{
+        top: -150px;   
+        left: 350px; 
+    }
 
+    .bcafe p{
+        top: 400px;
+        left: -70px;
+    }
 
-.pais-es .el-5 {
-    left: 40px;
-}
+    .espiral{
+        display:none;
+    }
 
+    .pais-ori .r-2{
+        margin-top: 300px;
+        margin-right:15px;
+    }
 
-.pais-es .el-7 {
-    margin-top: 20%;
-    margin-right: 20%;
-}
-
-.pais-es .r-4 {
-    margin-top: 10%;
-    margin-bottom: 50px;
-}
-
-
-.pais-es .escritorio {
-    display: none;
-}
-
-.pais-es .mobile {
-    display: block;
-}
-
-.pais-es .el-5 {
-    position:relative;
-    top: -160px;
-    left: -100px;
-
-
-}
-
-
-.pais-es .el-4 p {
-    position:relative;
-    top:55px;
-    left: 190px;
-
-}
-
-.pais-es .el-4 #espiral {
-    position:relative;
-    top: -60px;
-    left: 100px;
 
 }
 
 
-.pais-es .el-4 img {
-    position:relative;
-    top: -120px;
-    left: 200px;
-
-}
-
-
-.pais-es .el-3 {
-    position:relative;
-    top: 60px;
-    left: 50px;
-    width: 150px;
-
-}
-
-
-.pais-es .img_banderas{
-    position:relative;
-    right: 50px;
-}
-
-
-.pais-es .el-1 .img-txt:after {
-    width: 140%;
-    height: 140%;
-    left: 23%;
-    top: 70%;
-    transform: rotate(-9deg);
-
-}
-
-
-.pais-es .el-3:after {
-    width: 260%;
-    height: 260%;
-    left: 50%;
-    top: -10%;
-}
-
-    
-}
 /*Fin 576px*/
-
-
 /*480px hacia abajo*/
 @media screen and (max-width: 480px){
 
 
-    .pais-es h1 {
-    font-size: 60px;
-}
+    .pais-ori h1 {
+    font-size: 75px;
+    background-size: 180px;
+    }
+
+    .olla{
+    margin-top: 60%;
+    }
+
+    #flechas_rojas2{
+    margin-left: -5%;
+    }
+
+     .btea{
+        top: 100px;
+        left: 100px;
+    }
+
+
+    .bcafe{
+        top: 150px;   
+        left: 100px; 
+    }
+
+    .bcafe p{
+        top: 400px;
+        left: -70px;
+    }
+
+
+     
+    .pais-ori .r-2{
+        margin-top: 600px;
+        margin-right:15px;
+    }
+
+    .el-6{
+        display:none;
+    }
+
+
+
+    .el-8{
+        display:none;
+    }
 
 
 
 
-
-.pais-es .el-4 #espiral {
-    position:relative;
-    top: -60px;
-    left: 100px;
-    width: 50px;
-
-}
-
-.pais-es .el-4 img {
-    position:relative;
-    top: -100px;
-    left: 230%;
-}
+   
 
 
-.pais-es .el-4 p{
-    left: 200%;
-    margin-top: 20%;
 
-}
-
-
-.pais-es .el-5 {
-    position:relative;
-    top: -120px;
-    left: -80px;
-}
-
-
-.pais-es .el-7 {
-    margin-top: 0%;
-}
-
-
-.pais-es .el-1 .img-txt:after {
-    width: 120%;
-    height: 140%;
-    left: 25%;
-    top: 60%;
-
-}
-
-
-.pais-es .el-3:after {
-    width: 140%;
-    height: 140%;
-    left: 65%;
-    top: 75%;
-}
-
-
-.pais-es .txtBanderas{
-    width: 400px;
-}
 
 }
-
 
 /*Fin 480px*/
+
+
+
 
 
