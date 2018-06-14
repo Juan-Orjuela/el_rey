@@ -331,7 +331,7 @@ html #content {
 
 #content.inicio .encabezado .sumario, #content.pasaporte-page .encabezado .sumario {
     position: relative;
-    padding: 0 120px;
+    padding: 0 145px;
     margin: 0
 }
 
@@ -884,6 +884,7 @@ Mapa
 
 #mapa .continentes {
     top: 0;
+    left: 0;
 }
 
 #mapa .globo {
@@ -2053,6 +2054,9 @@ RESPONSIVE
 /*Fin 576px*/
 /*480px hacia abajo*/
 @media screen and (max-width: 480px) {
+    #content.inicio .avion-intro img, #content.pasaporte-page .avion-intro img {
+       margin-top: 0px;
+    }
     #content header img {
         width: 100px;
     }
@@ -2152,69 +2156,28 @@ RESPONSIVE
 }
 /*Fin 480px*/
 @media screen and (min-width: 768px) and (max-width: 991px){
-    .inicio .box-mx,
-    .inicio .box-id,
-    .inicio .box-om {
-        min-height: 445px;
+    .inicio .box-it p,
+    .inicio .box-es p {
+        padding: 0.7em 2em;
     }
-    
-    .box-om .img {
-        margin-bottom: -15px ;
-        
-    }
-    .box-om h3 {
-        font-size: 38px;
-    }
-    .box .btn {
-        margin-bottom: 30px;
-    }
-    .box-om .btn {
-        margin-top: .75em;
-    }
-    .box-id p {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    .inicio .box-mx .btn {
-        margin-top: 1.1em;
-    }
-    .inicio .box-it,
-    .inicio .box-pr,
-    .inicio .box-ig {
-        min-height: 421px;
-    }
-    .inicio .box-it p {
-        padding: 0.7em 1.6em;
-    }
-    .inicio .box-pr .btn {
-        margin-top: 1.2em;
-    }
-    .inicio .box-ig .btn {
-        margin-top: 1.2em;
-    }
-    .inicio .box-ps img {
-        margin-top: -9.5%;
+    .inicio .box-ps img{
+       margin-bottom: 2.2%; 
     }
 }
 @media screen and (min-width: 992px ) {
-    .inicio .box {
-        min-height: 513px;
+    .inicio .box-mx p,
+    .inicio .box-id p,
+    .inicio .box-om p,
+    .inicio .box-pr p,
+    .inicio .box-ig p,
+    .inicio .box-gr p {
+        padding: 0.7em 3em;
     }
-    .box-mx .btn {
-        margin-top: 1.05em;
+    .inicio .box-it .btn,
+    .inicio .box-es .btn {
+        margin-top: 1.03em;
     }
-    .box-om .img {
-        margin-top: 0;
-        margin-bottom: -35px;
-    }
-    .box-om h3 {
-        font-size: 40px;
-    }
-    .box-it .btn,
-    .box-pr .btn,
-    .box-ig .btn,
-    .box-gr .btn,
-    .box-es .btn {
-       margin-top: 1.05em; 
+    .inicio .box-ps img {
+        margin-top:-.25em;
     }
 }
