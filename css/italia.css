@@ -41,7 +41,7 @@ Custom pais
 
 .pais-ita .signo_mas{
     position:absolute;
-    top: 46%;
+    top:150px;
     left: 95%;
 }
 
@@ -123,6 +123,10 @@ RESPONSIVE
     margin-top: 10%;
 }
 
+    .pais-ita .signo_mas{
+    top: 100px;
+    left: 195px;;
+}
 
 }
 
