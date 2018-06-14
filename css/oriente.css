@@ -18,8 +18,9 @@ Custom pais
     color: #65a126;
     background-image: url("../img/imagen_intro_oriente.png");
     background-position: right 5.7% top 100%;
-    background-size: 450px;
+    background-size: 350px;
     padding: .85em 0 .1em;
+    line-height: 0.9;
 }
 
 .pais-ori h1 span {
@@ -142,11 +143,10 @@ RESPONSIVE
 /*992px hacia abajo*/
 @media screen and (max-width: 992px) {
 
-    .pais-ori h1 {
-    font-size: 160px;
-    background-size: 380px;
+    .pais-ori h1 span {
+        margin-top: 5%;
     }
-
+   
     .pais-ori .info {
     margin-top: 10%;
     }
@@ -170,6 +170,11 @@ RESPONSIVE
 /*768px hacia abajo*/
 @media screen and (max-width: 768px){
 
+     .pais-ori h1 {
+    font-size: 160px;
+    background-size: 300px;
+    }
+
     .el-1{
         margin-bottom: 150px;
     }
@@ -187,7 +192,7 @@ RESPONSIVE
 
     .pais-ori h1 {
     font-size: 100px;
-    background-size: 250px;
+    background-size: 200px;
     }
 
     .el-1{
@@ -247,7 +252,7 @@ RESPONSIVE
 
     .pais-ori h1 {
     font-size: 75px;
-    background-size: 180px;
+    background-size: 160px;
     }
 
     .olla{
