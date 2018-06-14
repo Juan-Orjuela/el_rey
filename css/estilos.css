@@ -415,7 +415,7 @@ html #content {
 
 /*Contenido general*/
 #content main {
-    background-image: url("../img/fondo-main.jpg");
+    background-image: url("../img/halftone-yellow.png");
     background-repeat: repeat;
     background-position: center;
     background-color: #ffd860;
@@ -448,7 +448,7 @@ html #content {
 
 /*Home*/
 #content.inicio main {
-    background-image: url("../img/aviones-fondo-home.png"), url("../img/aviones-fondo-home2.png"), url("../img/aviones-fondo-home3.png"), url("../img/aviones-fondo-home4.png"), url("../img/fondo-main.jpg");
+    background-image: url("../img/aviones-fondo-home.png"), url("../img/aviones-fondo-home2.png"), url("../img/aviones-fondo-home3.png"), url("../img/aviones-fondo-home4.png"), url("../img/halftone-yellow.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
     background-position: -5% 10%, 115% 45%, 8% 90%, 95% 108%, center;
     background-color: #ffd860;
