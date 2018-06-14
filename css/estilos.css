@@ -83,7 +83,7 @@ html #content {
 }
 
 /*Hojas*/
-#content aside #content main {
+#content aside, #content main {
     position: relative;
 }
 
@@ -223,7 +223,7 @@ html #content {
 }
 
 /*Encabezado*/
-#content header {
+#content.pais header {
     background: #d31c32 url("../img/fondo-encabezado.jpg") repeat center top;
     background-attachment: fixed;
     padding-top: 20px;
@@ -235,13 +235,13 @@ html #content {
     overflow: hidden;
 }
 
-#content header img {
+#content.pais header img {
     width: 145px;
     position: relative;
     z-index: 2;
 }
 
-#content header h2 {
+#content.pais header h2 {
     font-family: 'Pacifico', cursive;
     font-size: 90px;
     color: #ffd860;
@@ -250,7 +250,7 @@ html #content {
     z-index: 2;
 }
 
-#content header::before, #content header::after {
+#content.pais header::before, #content.pais header::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -259,14 +259,100 @@ html #content {
     display: block;
 }
 
-#content header:before {
+#content.pais header:before {
     right: 55%;
     background: url("../img/fondo-av.png") no-repeat right 80px bottom;
 }
 
-#content header:after {
+#content.pais header:after {
     left: 55%;
     background: url("../img/fondo-av-2.png") no-repeat left bottom;
+}
+
+/*Header Home y Pasaporte*/
+#content.inicio header .franja-aviones, #content.pasaporte-page header .franja-aviones {
+    background: #d31c32 url("../img/fondo-encabezado.jpg") repeat center top;
+    background-attachment: fixed;
+    padding-top: 20px;
+    border-bottom: 3px solid #ffd860;
+    position: relative;
+    -webkit-box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 60px 20px rgba(0, 0, 0, .5);
+    z-index: 2;
+    overflow: hidden;
+    min-height: 160px;
+}
+
+#content.inicio header .franja-aviones::before, #content.inicio header .franja-aviones::after, #content.inicio pasaporte .franja-aviones::before, #content.inicio pasaporte .franja-aviones::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    display: block;
+}
+
+#content.inicio header .franja-aviones:before, #content.inicio pasaporte .franja-aviones:before {
+    right: 55%;
+    background: url("../img/fondo-av.png") no-repeat right 80px bottom;
+}
+
+#content.inicio header .franja-aviones:after, #content.inicio pasaporte .franja-aviones:after {
+    left: 55%;
+    background: url("../img/fondo-av-2.png") no-repeat left bottom;
+}
+
+#content.inicio header img.rey-logo, #content.pasaporte-page header img.rey-logo {
+    width: 188px;
+    position: relative;
+    z-index: 2;
+    margin-top: -120px;
+}
+
+#content.inicio header h2, #content.pasaporte-page header h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    color: #e30c42;
+    text-shadow: 0 0 15px rgba(0,0,0,.6);
+    position: relative;
+    z-index: 2;
+    margin-top: 0.4em;
+}
+
+#content.inicio .encabezado, #content.pasaporte-page .encabezado {
+    background: #0d0d0d url('../img/fondo-header-home.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#content.inicio .txt-am, #content.pasaporte-page .txt-am {
+    color: #ffd860;
+}
+
+#content.inicio .encabezado .sumario, #content.pasaporte-page .encabezado .sumario {
+    position: relative;
+    padding: 0 145px;
+    margin: 0
+}
+
+#content.inicio .encabezado .plato, #content.pasaporte-page .encabezado .plato {
+    position: absolute;
+    max-width : 90px;
+    top: 50%;
+    margin: -45px 0 0;
+}
+
+#content.inicio .encabezado .plato-1, #content.pasaporte-page .encabezado .plato-1 {
+    left: 0;
+}
+
+#content.inicio .encabezado .plato-2, #content.pasaporte-page .encabezado .plato-2 {
+    right: 0;
+}
+
+#content.inicio .avion-intro img, #content.pasaporte-page .avion-intro img {
+    width: 90px;
+    margin-top: -90px;
 }
 
 /*Video*/
@@ -319,12 +405,12 @@ html #content {
     background: url("../img/fondo-mesa.jpg") no-repeat right bottom;
 }
 
-#content aside .hoja-1, #content aside .hoja-4 {
+#content aside .hoja-1, #content aside .hoja-4, #content.inicio .encabezado .hoja-1, #content.inicio .encabezado .hoja-4, #content.pasaporte-page .encabezado .hoja-1, #content.pasaporte-page .encabezado .hoja-4 {
     top: 0;
 }
 
-#content aside .hoja-2, #content aside .hoja-5 {
-    bottom: -25%;
+#content aside .hoja-2, #content aside .hoja-5, #content.inicio .encabezado .hoja-2, #content.inicio .encabezado .hoja-5, #content.pasaporte-page .encabezado .hoja-2, #content.pasaporte-page .encabezado .hoja-5 {
+    bottom: -20%;
 }
 
 /*Contenido general*/
@@ -798,6 +884,7 @@ Mapa
 
 #mapa .continentes {
     top: 0;
+    left: 0;
 }
 
 #mapa .globo {
@@ -1360,7 +1447,7 @@ RESPONSIVE
         width: 39px;
     }
 
-    #content.pasaporte-page .avion {
+    #content.pasaporte-page-page .avion {
         max-width: 120px;
         margin: 50px;
     }
@@ -1655,6 +1742,7 @@ RESPONSIVE
     #mapa .barco {
         max-width: 120px;
     }
+
     #content header:before {
         right: 53%;
         background: url("../img/fondo-av.png") no-repeat right 10px bottom;
@@ -1674,7 +1762,7 @@ RESPONSIVE
     }
 
     #content header h2 {
-        font-size: 70px;
+        font-size: 70px!important;
     }
 
     .box h3 {
@@ -1840,11 +1928,12 @@ RESPONSIVE
         width: 60px;
         right: -10px
     }
+
     #content header:before {
         right: 53%;
         background: url("../img/fondo-av.png") no-repeat right 15% bottom;
         background-size: 180%;
-         transform: scaleY(-1);
+        transform: scaleY(-1);
     }
 
     #content header:after {
@@ -1852,6 +1941,20 @@ RESPONSIVE
         background: url("../img/fondo-av-2.png") no-repeat right 10% bottom;
         background-size: 180%;
         transform: scaleY(-1);
+    }
+
+    /*Nuevo encabezado*/
+    #content.inicio .encabezado .sumario, #content.pasaporte-page .encabezado .sumario {
+        padding: 0;
+    }
+
+    #content.inicio .encabezado .plato, #content.pasaporte-page .encabezado .plato {
+        display: none;
+    }
+
+    #content.inicio .avion-intro img, #content.pasaporte-page .avion-intro img {
+        width: 90px;
+        margin-top: -90px;
     }
 }
 
@@ -1863,7 +1966,7 @@ RESPONSIVE
     }
 
     #content header h2 {
-        font-size: 65px;
+        font-size: 65px!important;
         margin-top: 0.2em;
     }
 
@@ -1951,12 +2054,17 @@ RESPONSIVE
 /*Fin 576px*/
 /*480px hacia abajo*/
 @media screen and (max-width: 480px) {
+    #content.inicio .avion-intro img, #content.pasaporte-page .avion-intro img {
+       margin-top: 0px;
+    }
     #content header img {
         width: 100px;
     }
-
+    #content .rey-logo {
+        width: 150px!important;
+    }
     #content header h2 {
-        font-size: 45px;
+        font-size: 45px!important;
     }
 
     .sumario p {
@@ -2046,5 +2154,30 @@ RESPONSIVE
         display: none;
     }
 }
-
 /*Fin 480px*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .inicio .box-it p,
+    .inicio .box-es p {
+        padding: 0.7em 2em;
+    }
+    .inicio .box-ps img{
+       margin-bottom: 2.2%; 
+    }
+}
+@media screen and (min-width: 992px ) {
+    .inicio .box-mx p,
+    .inicio .box-id p,
+    .inicio .box-om p,
+    .inicio .box-pr p,
+    .inicio .box-ig p,
+    .inicio .box-gr p {
+        padding: 0.7em 3em;
+    }
+    .inicio .box-it .btn,
+    .inicio .box-es .btn {
+        margin-top: 1.03em;
+    }
+    .inicio .box-ps img {
+        margin-top:-.25em;
+    }
+}

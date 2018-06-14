@@ -338,65 +338,59 @@
         <article>
             <!-- Encabezado-->
             <header class="text-center">
-                <img src="img/logo-el-rey.png" alt="Condimentos El Rey" srcset="img/logo-el-rey.png, img/logo-el-rey@2x.png 2x">
-                <h2>Del mundo a la mesa</h2>
-            </header>
-            <!-- Video-->
-            <aside>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="video-rey">
-                                <video id="video_rey" width="100%" height="auto" controls>
-                                    <source src="video/video_comp_con_cabeza_hb.mp4" type="video/mp4"> Tu navegador no soporta videos.
-                                </video>
-                                <!--<div id="video-controls">
-                                    <button type="button" id="play-pause">Play</button>
-                                    <input type="range" id="seek-bar" value="0">
-                                    <button type="button" id="mute">Mute</button>
-                                    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-                                    <button type="button" id="full-screen">Full-Screen</button>
-                                </div>-->
+                <div class="franja-aviones"></div>
+                <div class="encabezado">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img class="rey-logo" src="img/logo-el-rey.png" alt="Condimentos El Rey" srcset="img/logo-el-rey.png, img/logo-el-rey@2x.png 2x">
+                                <h2 data-aos="fade-up">Del mundo a la mesa</h2>
+
+                                <div class="sumario">
+                                    <img class="plato plato-1" data-aos="fade-up" data-aos-delay="600" src="img/icon-home-1.png" alt="Plato">
+                                    <p data-aos="fade-up" data-aos-delay="200" class="txt-am">La <strong>gastronomía es una expresión cultural,</strong> por eso en la mayoría de países hay un plato
+                                        típico, y cada uno de estos tiene un ingrediente clave, sin el cual la comida no
+                                        sabría igual.</p>
+                                    <p  data-aos="fade-up" data-aos-delay="400" class="p-trigger txt-am">Aquí le contamos cuáles son esos ingredientes y cómo darle un toque internacional a su
+                                        comida.
+                                    </p>
+                                    <img class="plato plato-2" data-aos="fade-up" data-aos-delay="800" src="img/icon-home-2.png" alt="Plato">
+                                </div>
+
+                                <div>
+                                    <img data-aos="fade-down" data-aos-delay="1000" data-aos-anchor=".p-trigger" src="img/flecha-bajar.png" alt="Bajar">
+                                </div>
+                                
+                                
                             </div>
                         </div>
                     </div>
+                    <div class="hoja hoja-1">
+                        <div class="hoja hoja-1b"></div>
+                        <div class="hoja hoja-1a"></div>
+                    </div>
+                    <div class="hoja hoja-2">
+                        <div class="hoja hoja-2a"></div>
+                        <div class="hoja hoja-2b"></div>
+                    </div>
+                    <div class="hoja hoja-4">
+                        <div class="hoja hoja-4b"></div>
+                        <div class="hoja hoja-4a"></div>
+                    </div>
+                    <div class="hoja hoja-5">
+                        <div class="hoja hoja-5a"></div>
+                    </div>
                 </div>
-                <div class="hoja hoja-1">
-                    <div class="hoja hoja-1b"></div>
-                    <div class="hoja hoja-1a"></div>
-                </div>
-                <div class="hoja hoja-2">
-                    <div class="hoja hoja-2a"></div>
-                    <div class="hoja hoja-2b"></div>
-                </div>
-                <div class="hoja hoja-4">
-                    <div class="hoja hoja-4b"></div>
-                    <div class="hoja hoja-4a"></div>
-                </div>
-                <div class="hoja hoja-5">
-                    <div class="hoja hoja-5a"></div>
-                </div>
-            </aside>
+            </header>
+            <!-- Video-->
             <!-- Contenido Principal-->
             <main>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-10 offset-xl-1">
-                            <!-- Intro -->
-                            <div class="row">
-
-                                <div class="col text-center">
-                                    <img data-aos="fade-up" src="img/icon-home-1.png" alt="Plato">
-                                    <div class="sumario">
-                                        <p data-aos="fade-up" data-aos-delay="200" class="txt-rojo">La gastronomía es una expresión cultural, por eso en la mayoría de países hay un
-                                            plato típico, y cada uno de estos tiene un ingrediente clave, sin el cual la
-                                            comida no sabría igual.</p>
-                                        <p data-aos="fade-up" data-aos-delay="400" class="txt-cafe">Aquí le contamos cuáles son esos ingredientes y cómo darle un toque internacional
-                                            a su comida.</p>
+                                <div class="avion-intro text-center">
+                                        <img data-aos="fade-down" src="img/avion-pasaporte.png" alt="Avion">
                                     </div>
-                                    <img data-aos="fade-up" data-aos-delay="600" src="img/icon-home-2.png" alt="Plato">
-                                </div>
-                            </div>
                             <!-- Paises -->
                             <div class="row">
                                 <div class="col">
@@ -407,7 +401,7 @@
                                                     <img src="img/plato-mexico.png" alt="Plato México">
                                                 </div>
                                                 <h3>México</h3>
-                                                <p>Achiote y comino achiote</p>
+                                                <p>Delicioso sabor ahumado y picante</p>
                                                 <a href="mexico.html" class="btn">Conócelo</a>
                                             </div>
                                         </div>
@@ -417,7 +411,7 @@
                                                     <img src="img/plato-id.png" alt="Plato India">
                                                 </div>
                                                 <h3>India</h3>
-                                                <p>Canela, clavo, nuez moscada y pimienta negra</p>
+                                                <p>Especias con sabor picante e intenso</p>
                                                 <a href="india.html" class="btn">Conócela</a>
                                             </div>
                                         </div>
@@ -427,7 +421,7 @@
                                                     <img src="img/plato-om.png" alt="Plato Oriente Medio">
                                                 </div>
                                                 <h3>Oriente Medio</h3>
-                                                <p>Jengibre en polvo</p>
+                                                <p>Un toque especial de tradición oriental</p>
                                                 <a href="oriente.html" class="btn">Conócela</a>
                                             </div>
                                         </div>
@@ -440,7 +434,7 @@
                                                     <img src="img/plato-it.png" alt="Plato Italia">
                                                 </div>
                                                 <h3>Italia</h3>
-                                                <p>Romero, el orégano y el tomillo</p>
+                                                <p>El secreto del sabor italiano</p>
                                                 <a href="italia.html" class="btn">Conócelo</a>
                                             </div>
                                         </div>
@@ -450,7 +444,7 @@
                                                     <img src="img/plato-pr.png" alt="Plato Perú">
                                                 </div>
                                                 <h3>Perú</h3>
-                                                <p>Perejil</p>
+                                                <p>Acompañe y marine un plato innovador</p>
                                                 <a href="peru.html" class="btn">Conócela</a>
                                             </div>
                                         </div>
@@ -460,7 +454,7 @@
                                                     <img src="img/plato-ig.png" alt="Plato Inglaterra">
                                                 </div>
                                                 <h3>Inglaterra</h3>
-                                                <p>Curry</p>
+                                                <p>Una experiencia realmente internacional</p>
                                                 <a href="inglaterra.html" class="btn">Conócela</a>
                                             </div>
                                         </div>
@@ -474,7 +468,7 @@
                                                     <img src="img/plato-gr.png" alt="Plato Grecia">
                                                 </div>
                                                 <h3>Grecia</h3>
-                                                <p>Laurel</p>
+                                                <p>Disfrute de un aroma Herbáceo y profundo</p>
                                                 <a href="grecia.html" class="btn">Conócelo</a>
                                             </div>
                                         </div>
@@ -484,7 +478,7 @@
                                                     <img src="img/plato-es.png" alt="Plato Escandinavia">
                                                 </div>
                                                 <h3>Escandinavia</h3>
-                                                <p>Canela</p>
+                                                <p>Un postre con el toque original</p>
                                                 <a href="escandinavia.html" class="btn">Conócela</a>
                                             </div>
                                         </div>
@@ -503,14 +497,8 @@
                                                 <div class="phoja phoja-3"></div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
-                                </div>
-                            </div>
-                            <!-- Link -->
-                            <div class="row text-center">
-                                <div class="col">
-                                    <a class="btn-vermas" href="pasaporte.html">Viaja a más paises</a>
                                 </div>
                             </div>
                             <!-- Rey -->

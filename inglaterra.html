@@ -348,38 +348,31 @@
                     <div class="row">
                         <div class="col">
                             <div class="video-rey">
-                                <video id="video_rey" width="100%" height="auto" controls>
-                                    <source src="video/inglaterra.mp4" type="video/mp4">
-                                    <source src="video/inglaterra.ogg" type="video/ogg">
-                                    <source src="video/inglaterra.webm" type="video/webm"> 
-                                    Tu navegador no soporta videos.
-                                </video>
-                                <!--<div id="video-controls">
-                                    <button type="button" id="play-pause">Play</button>
-                                    <input type="range" id="seek-bar" value="0">
-                                    <button type="button" id="mute">Mute</button>
-                                    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-                                    <button type="button" id="full-screen">Full-Screen</button>
-                                </div>-->
+                                <div style="padding:41.7% 0 0 0;position:relative;">
+                                    <iframe src="https://player.vimeo.com/video/275130030?autoplay=1&color=e30c42&title=0&byline=0&portrait=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen
+                                        mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                                <script src="https://player.vimeo.com/api/player.js"></script>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="hoja hoja-1">
-                        <div class="hoja hoja-1b"></div>
-                        <div class="hoja hoja-1a"></div>
-                    </div>
-                    <div class="hoja hoja-2">
-                        <div class="hoja hoja-2a"></div>
-                        <div class="hoja hoja-2b"></div>
-                    </div>
-                    <div class="hoja hoja-4">
-                        <div class="hoja hoja-4b"></div>
-                        <div class="hoja hoja-4a"></div>
-                    </div>
-                    <div class="hoja hoja-5">
-                        <div class="hoja hoja-5a"></div>
-                    </div>
+                    <div class="hoja hoja-1b"></div>
+                    <div class="hoja hoja-1a"></div>
+                </div>
+                <div class="hoja hoja-2">
+                    <div class="hoja hoja-2a"></div>
+                    <div class="hoja hoja-2b"></div>
+                </div>
+                <div class="hoja hoja-4">
+                    <div class="hoja hoja-4b"></div>
+                    <div class="hoja hoja-4a"></div>
+                </div>
+                <div class="hoja hoja-5">
+                    <div class="hoja hoja-5a"></div>
+                </div>
             </aside>
             <!-- Contenido Principal-->
             <main>
@@ -389,17 +382,17 @@
                             <!-- Encabezado -->
                             <div class="row encabezado">
                                 <div class="col">
-                                    <div data-aos="fade-down"class="flecha text-center">
+                                    <div data-aos="fade-down" class="flecha text-center">
                                         <img src="img/fle-ig.png" alt="Flecha">
                                     </div>
                                     <div class="cont-tit">
-                                        <h1 data-aos="fade-up" >
+                                        <h1 data-aos="fade-up">
                                             <span>Bienvenidos a</span> Inglaterra</h1>
                                     </div>
-                                    <div data-aos="fade-up"  data-aos-delay="300" class="linea">
+                                    <div data-aos="fade-up" data-aos-delay="300" class="linea">
                                         <img src="img/linea-ig.png" alt="Linea">
                                     </div>
-                                    <p data-aos="fade-up"  data-aos-delay="600" class="txt-intro">Descubra un plato de la India, que pasa por Inglaterra y ahora llega a su mesa.</p>
+                                    <p data-aos="fade-up" data-aos-delay="600" class="txt-intro">Descubra un plato de la India, que pasa por Inglaterra y ahora llega a su mesa.</p>
                                 </div>
                             </div>
                             <!--Info-->
@@ -407,13 +400,15 @@
                                 <div class="row r-1">
                                     <div class="col-6">
                                         <div data-aos="fade-right" data-aos-delay="300" class="el-1">
-                                            <div class="img-txt"><img src="img/img-ig-1.png" alt="Curry">
-                                            <span class="ingrediente">Curry</span></div>
+                                            <div class="img-txt">
+                                                <img src="img/img-ig-1.png" alt="Curry">
+                                                <span class="ingrediente">Curry</span>
+                                            </div>
                                             <img src="img/ico-ig-1.png" alt="Ingrediente">
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <div  data-aos="fade-left"  data-aos-delay="600"  class="el-2">
+                                        <div data-aos="fade-left" data-aos-delay="600" class="el-2">
                                             <img src="img/img-ig-2.png" alt="Curry">
                                             <p class="text-center">En los bares ingleses es común el
                                                 <em>curry gravy</em>, una salsa hecha a base de:</p>
@@ -424,7 +419,8 @@
                                     <div class="col-6">
                                         <div data-aos="fade-right" data-aos-delay="300" class="el-3">
                                             <img src="img/img-ig-3.png" alt="Curry">
-                                            <p class="text-center">Acompaña muy bien<br> las papas fritas.</p>
+                                            <p class="text-center">Acompaña muy bien
+                                                <br> las papas fritas.</p>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -437,16 +433,24 @@
                                     <div class="col">
                                         <div data-aos="fade" class="el-5 abs-txt">
                                             <img src="img/graf-ig-3.png" srcset="img/graf-ig-3.png, img/graf-ig-3m.png 576w" alt="Ingrediente">
-                                            <p data-aos="fade-left" >Cebolla</p>
-                                            <p data-aos="fade-left" data-aos-delay="300" >Tomate</p>
-                                            <p data-aos="fade-left" data-aos-delay="600" >Ajo</p>
-                                            <p data-aos="fade-left" data-aos-delay="900" >Jengibre</p>
-                                            <p data-aos="fade" >de sabor ligeramente picante y tostado</p>
+                                            <p data-aos="fade-left">Cebolla</p>
+                                            <p data-aos="fade-left" data-aos-delay="300">Tomate</p>
+                                            <p data-aos="fade-left" data-aos-delay="600">Ajo</p>
+                                            <p data-aos="fade-left" data-aos-delay="900">Jengibre</p>
+                                            <p data-aos="fade">de sabor ligeramente picante y tostado</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-up"  class="row r-4"><div class="col text-center"><img src="img/graf-ig-4.png" alt="Cebolla"></div></div>
-                                <div data-aos="fade-up"  data-aos-delay="300" class="row r-5"><div class="col text-center"><img src="img/graf-ig-5.png" alt="Separador"></div></div>
+                                <div data-aos="fade-up" class="row r-4">
+                                    <div class="col text-center">
+                                        <img src="img/graf-ig-4.png" alt="Cebolla">
+                                    </div>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="300" class="row r-5">
+                                    <div class="col text-center">
+                                        <img src="img/graf-ig-5.png" alt="Separador">
+                                    </div>
+                                </div>
                             </div>
                             <!--Fin info-->
                             <!-- Link -->
@@ -489,7 +493,9 @@
                 </div>
             </footer>
         </article>
-        <a class="btn-volver-home" href="index.html"><img src="img/btn-home.png" alt="Volver al inicio"></a>
+        <a class="btn-volver-home" href="index.html">
+            <img src="img/btn-home.png" alt="Volver al inicio">
+        </a>
     </div>
     <!-- Fin Contenido especial-->
     <footer>
