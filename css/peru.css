@@ -79,6 +79,9 @@ Custom pais
     display:none;
 }
 
+.el-1 span{
+    left:42%;
+}
 
 /*
 ============
@@ -127,6 +130,10 @@ RESPONSIVE
     top: 65%;
     }
 
+.el-1 span{
+    left:50%;
+}
+
 }
 
 /*Fin 768px*/
@@ -155,6 +162,8 @@ RESPONSIVE
              margin: 0 auto;
 
     }
+
+
 
 }
 
@@ -194,7 +203,10 @@ RESPONSIVE
     top: 60%;
     z-index:-1000;
     }
-
+    
+    .el-1 span{
+    left:42%;
+    }
 
 
 
