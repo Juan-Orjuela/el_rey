@@ -366,6 +366,7 @@ html #content {
     line-height: 0;
     -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, .8);
     box-shadow: 0 0 25px 5px rgba(0, 0, 0, .8);
+    background-color: #040406;
 }
 
 /*#content aside .video-rey:before, #content aside .video-rey:after {
