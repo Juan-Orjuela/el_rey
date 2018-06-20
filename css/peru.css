@@ -14,8 +14,9 @@ Custom pais
     font-size: 270px;
     color: #f01918;
     background-image: url("../img/fondo_intro_peru.png");
-    background-position: right 5% top ;
-    padding: .85em 0 .1em;
+    background-position: right 3% top 65% ;
+     background-size: 400px;
+    padding: .9em 0 .90em;
 }
 
 .pais-per h1 span {
@@ -43,6 +44,10 @@ Custom pais
 
 .pais-per .txt_rojo{
     color: #f01918;
+}
+
+.pais-per .linea{
+    margin-top: -250px!important;
 }
 
 .pais-per .r-3{
@@ -109,6 +114,9 @@ RESPONSIVE
 
     .pais-per h1 {
     font-size: 240px;
+    background-size: 310px;
+    background-position: right 20% top 58% 
+
     }   
 
 }
@@ -117,6 +125,12 @@ RESPONSIVE
 /*Fin 992px*/
 /*768px hacia abajo*/
 @media screen and (max-width: 768px){
+
+    .pais-per h1 {
+    background-size: 300px;
+    background-position: right 5% top 50% 
+
+    }  
 
     .pais-per .el-2:after {
     width: 30%;
@@ -139,6 +153,16 @@ RESPONSIVE
 /*Fin 768px*/
 /*576px hacia abajo*/
 @media screen and (max-width: 576px){
+
+    .pais-per h1 {
+    background-size: 200px;
+
+    } 
+
+    
+    .pais-per .linea{
+    margin-top: -150px!important;
+    }
 
     .pais-per h1 {
     font-size: 180px;
@@ -171,6 +195,12 @@ RESPONSIVE
 /*Fin 576px*/
 /*480px hacia abajo*/
 @media screen and (max-width: 480px){
+
+
+    
+    .pais-per .linea{
+    margin-top: -100px!important;
+    }
 
 
 
